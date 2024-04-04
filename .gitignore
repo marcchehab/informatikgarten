@@ -8,3 +8,5 @@ out/
 tsconfig.tsbuildinfo
 .vscode/
 .idea/
+.vercel
+.env*.local

@@ -41,6 +41,8 @@ export type UserConfig = {
   title?: string;
   author: string;
   domain: string;
+  profileIcon: string,
+  loginIcon: string,
 } & Partial<typeof defaultConfig>;
 
 export type SiteConfig = typeof defaultConfig & typeof userConfig;

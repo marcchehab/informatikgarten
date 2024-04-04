@@ -1,3 +1,4 @@
+import log from "@/components/logger";
 import Script from "next/script";
 import { DefaultSeo } from "next-seo";
 import { useRouter } from "next/router";
@@ -14,6 +15,7 @@ import "@/styles/docsearch.css";
 import "@/styles/global.css";
 import "@/styles/prism.css";
 import { Analytics } from "@portaljs/core";
+import { SessionProvider } from "next-auth/react";
 
 export interface CustomAppProps {
     meta: {
@@ -30,8 +32,9 @@ export interface CustomAppProps {
 }
 
 const MyApp = ({ Component, pageProps }: AppProps<CustomAppProps>) => {
+    useEffect(() => { log ("INFO", "Schön, dass Sie die Dev-Tools kennen 🤓. Jetzt befinden Sie sich in der Javascript-Konsole. Hier printe ich mit der Webapp Infos aus, damit ich weiss, was gerade passiert.")},[]);
     const router = useRouter();
-    const { meta, siteMap } = pageProps;
+    const { meta, siteMap, session } = pageProps;
 
     const layoutProps = {
         showToc: meta?.showToc,
@@ -73,32 +76,29 @@ const MyApp = ({ Component, pageProps }: AppProps<CustomAppProps>) => {
     }, [router.events]);
 
     return (
-        <ThemeProvider
-            disableTransitionOnChange
-            attribute="class"
-            defaultTheme={siteConfig.theme.default}
-            forcedTheme={siteConfig.theme.default ? null : "light"}
-        >
-            <DefaultSeo
-                defaultTitle={siteConfig.title}
-                {...siteConfig.nextSeo}
-            />
-            {siteConfig.analyticsConfig && (
-                <Analytics analyticsConfig={siteConfig.analyticsConfig} />
-            )}
-            {/*For compatibility, keep this.*/}
-            {/* Global Site Tag (gtag.js) - Google Analytics */}
-            {siteConfig.analytics && (
-                <>
-                    <Script
-                        strategy="afterInteractive"
-                        src={`https://www.googletagmanager.com/gtag/js?id=${siteConfig.analytics}`}
-                    />
-                    <Script
-                        id="gtag-init"
-                        strategy="afterInteractive"
-                        dangerouslySetInnerHTML={{
-                            __html: `
+        <SessionProvider session={session}>
+            <ThemeProvider
+                disableTransitionOnChange
+                attribute="class"
+                defaultTheme={siteConfig.theme.default}
+                forcedTheme={siteConfig.theme.default ? null : "light"}
+            >
+                <DefaultSeo
+                    defaultTitle={siteConfig.title}
+                    {...siteConfig.nextSeo}
+                />
+                {/* Global Site Tag (gtag.js) - Google Analytics */}
+                {siteConfig.analytics && (
+                    <>
+                        <Script
+                            strategy="afterInteractive"
+                            src={`https://www.googletagmanager.com/gtag/js?id=${siteConfig.analytics}`}
+                        />
+                        <Script
+                            id="gtag-init"
+                            strategy="afterInteractive"
+                            dangerouslySetInnerHTML={{
+                                __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
@@ -106,16 +106,17 @@ const MyApp = ({ Component, pageProps }: AppProps<CustomAppProps>) => {
                 page_path: window.location.pathname,
               });
             `,
-                        }}
-                    />
-                </>
-            )}
-            <SearchProvider searchConfig={siteConfig.search}>
-                <Layout {...layoutProps}>
-                    <Component {...pageProps} />
-                </Layout>
-            </SearchProvider>
-        </ThemeProvider>
+                            }}
+                        />
+                    </>
+                )}
+                <SearchProvider searchConfig={siteConfig.search}>
+                    <Layout {...layoutProps}>
+                        <Component {...pageProps} />
+                    </Layout>
+                </SearchProvider>
+            </ThemeProvider>
+        </SessionProvider>
     );
 };
 
