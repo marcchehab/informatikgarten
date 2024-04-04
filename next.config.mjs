@@ -1,15 +1,16 @@
 export default {
-    eslint: {
-      ignoreDuringBuilds: true,
-    },
-    webpack: (config) => {
-      config.experiments = {
-        topLevelAwait: true,
-        layers: true,
-      };
-      config.infrastructureLogging = {
-        level: "error",
-      };
-      return config;
-    },
-  };
+  output: "export",
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  webpack: (config) => {
+    config.experiments = {
+      topLevelAwait: true,
+      layers: true,
+    };
+    config.infrastructureLogging = {
+      level: "error",
+    };
+    return config;
+  },
+};
