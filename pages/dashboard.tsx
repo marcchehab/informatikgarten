@@ -1,5 +1,4 @@
 import React from 'react';
-import { Session } from 'next-auth';
 import { signOut, useSession } from 'next-auth/react';
 // import styles from '@/styles/Home.module.css';
 import Link from 'next/link';
