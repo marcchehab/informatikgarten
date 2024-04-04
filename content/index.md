@@ -3,7 +3,7 @@ enableToc: false
 ---
 ## Grüezi & Willkommen
 
-Herzlich willkommen auf dem neuen Informatikgarten! Ich habe über die Weihnachtsferien die Seite komplett neu programmiert. Damit kommen viele Verbesserungen - und weitere werden folgen.
+Herzlich willkommen auf dem neuen Informatikgarten! Ich habe die Seite komplett neu programmiert. Damit kommen viele Verbesserungen - und weitere werden folgen.
 
 👈 Neu finden Sie die Inhaltsübersicht hier links.
 
