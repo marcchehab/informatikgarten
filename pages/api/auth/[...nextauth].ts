@@ -1,7 +1,6 @@
 import NextAuth from 'next-auth';
 import AzureADProvider from 'next-auth/providers/azure-ad';
 import log from '@/components/logger';
-import type { NextApiRequest, NextApiResponse } from 'next';
 
 const env = process.env;
 const authorizationUrl = 'https://login.microsoftonline.com/common/oauth2/v2.0/authorize';
