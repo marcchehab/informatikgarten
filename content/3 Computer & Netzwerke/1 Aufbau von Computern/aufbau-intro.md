@@ -1,7 +1,13 @@
 ---
-title: Module - Eine Denkhilfe für die Informatik
+title: Eine Denkhilfe für die Informatik
 slug: denkhilfe-informatik
 ---
+
+> [!success] Lernziele
+> 
+> - Sie können erklären, wie Ihnen die Unterscheidung von **Abstraktion** und **Implementierung** hilft, Ordnung in die Komplexität der Informatik zu bringen.
+
+## Abstraktion und Implementation von Modulen unterscheiden
 
 > Sie fragen sich vielleicht, wie es möglich ist, ein komplettes Computersystem von Grund auf zu konstruieren, das mit nichts anderem als elementarsten Schaltkreisen beginnt. Das muss ein gigantisches Unterfangen sein! Wir gehen mit dieser Komplexität um, indem wir **das System in Module aufteilen**. Jedes Modul wird ... separat in einem eigenständigen Projekt aufgebaut. Sie werden sich vielleicht fragen, wie es möglich ist, diese Module isoliert zu beschreiben und zu bauen? Sie sind doch sicher miteinander verbunden! Wie wir ... zeigen werden, impliziert ein gutes modulares Design genau das: Sie können an den einzelnen Modulen unabhängig voneinander arbeiten, während Sie den Rest des Systems völlig ignorieren. Wenn das System gut konzipiert ist, können Sie diese Module in beliebiger Reihenfolge und sogar parallel zueinander aufbauen, wenn Sie im Team arbeiten.
 > 
@@ -9,7 +15,37 @@ slug: denkhilfe-informatik
 > 
 > *Nisan, N. & Schocken, S. (2005) The Elements of Computing Systems: Building a Modern Computer from First Principles*
 
-In der Welt der Informatik werden fast ausschliesslich **Schnittstellen** standardisiert und vorgeschrieben - z.B. Kommunikationsprotokolle, Stecker, Sockel, Pin-Belegungen, etc. Wie ein Modul dann diese Schnittstelle **implementiert**, ist meistens freigestellt. Die konkrete Funktionsweise eines Moduls interessiert uns nur, wenn wir dieses Modul verstehen wollen - ansonsten reicht uns die Schnittstelle. 
+In der Welt der Informatik werden abstrakte **Schnittstellen** standardisiert und vorgeschrieben - z.B. Stecker, Kommunikationsprotokolle, die Parameter einer Funktion, etc. Wie ein Modul dann diese Schnittstelle **implementiert**, ist meist freigestellt. Die konkrete Funktionsweise eines Moduls interessiert uns nur, wenn wir dieses Modul verstehen wollen - ansonsten reicht uns die Schnittstelle.
+
+
+> [!important] Merken Sie sich
+> 
+> Bei Modulen kann man ihre **Abstraktion** (oder Schnittstelle) von ihrer Implementierung (oder Funktionsweise) unterscheiden. Man nutzt sehr oft Module, ohne ihre Implementierung überhaupt zu kennen!
+
+Dazu folgendes Beispiel einer Funktion `multiplizieren`.
+
+```turtle
+def multiplizieren(a, b):
+	resultat = 0
+	for i in range(a):
+		resultat = resultat + b
+	return resultat
+
+zahl = multiplizieren(3, 4)
+print(zahl)
+```
+
+> [!example] Kurze zu zweit
+> 
+> 1. Ist die Funktion `multiplizieren` elegant implementiert worden? Könnten Sie das besser?
+> 2. Was ändert sich durch Ihre Verbesserung auf Linie 7?
+
+> [!solution]- Lösung
+> 
+> 1. Nein, überhaupt nicht. Die Implmentierung ist ineffizient und fehleranfällig (z.B. bei negativen Nummern).
+> 2. Nichts, solange sich **die Schnittstelle (der Funktionsname und die Parameter)** nicht ändern.
+
+## Einige Beispiele
 
 > [!example] Jetzt sind Sie dran!
 > 
@@ -24,6 +60,8 @@ In der Welt der Informatik werden fast ausschliesslich **Schnittstellen** standa
 > 
 > **Implementierung / Funktionsweise**: Wie der Prozessor  gebaut wurde und wie er funktioniert. Das ist teilweise ein Geschäftsgeheimnis der Hersteller.
 
+
+
 ![[Pasted image 20230807173548.png]]
 > [!question]- Sie kreieren eine **Webseite**.
 >
@@ -32,6 +70,7 @@ In der Welt der Informatik werden fast ausschliesslich **Schnittstellen** standa
 >**Abstraktion / Schnittstelle**: Moderne Internet- und Webstandards (wie TCP/IP, HTTPS, HTML, CSS, Javascript, etc.)
 >
 >**Implementierung / Funktionsweise**: Wie der spezifische Browser oder die Geräte ihrer Benutzer funktionieren, können Sie gar nicht wissen und darf ihnen auch egal sein – das ist Sache der Benutzer.
+
 
 ![[Pasted image 20230807173846.png]]
 
@@ -42,14 +81,3 @@ In der Welt der Informatik werden fast ausschliesslich **Schnittstellen** standa
 > **Abstraktion / Schnittstelle**: Moderne Internet- und E-Mail-Standards (wie TCP/IP, SMTP, IMAP, POP...).
 > 
 > **Implementierung / Funktionsweise**: Wie Ihr E-Mail-Programm programmiert wurde. Das ist unter Umständen ebenfalls ein Geschäftsgeheimnis (e.g. Microsoft legt nicht offen, wie Outlook programmiert wurde).
-
-Diese Idee bildlich veranschaulicht:
-
-<iframe src="https://onedrive.live.com/embed?resid=FFA11E10DCAE9352%2129681&authkey=!AF-mFegEbwo2nAQ&em=2"></iframe>
-
-
-> [!SUMMARY] Das Wichtigste in Kürze
-> - Informatiker **teilen Systeme in Module auf**, die isoliert betrachtet werden können.
-> - Bei Modulen kann man ihre **Abstraktion** (oder Schnittstelle) von ihrer Implementierung (oder Funktionsweise) unterscheiden.
-> - Wenn man auf ein Modul aufbaut, nutzt man seine Schnittstelle/Abstraktion.
-> - Wenn man ein Modul selbst verstehen will, schaut man auf die Funktionsweise.
