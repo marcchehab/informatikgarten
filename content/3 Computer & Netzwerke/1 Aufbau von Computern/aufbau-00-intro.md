@@ -1,6 +1,5 @@
 ---
 title: "00: Denkhilfe & Übersicht"
-slug: denkhilfe-informatik
 ---
 > [!success] Lernziele
 > 
