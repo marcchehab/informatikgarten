@@ -4,7 +4,8 @@ title: "00: Denkhilfe & Übersicht"
 > [!success] Lernziele
 > 
 > - Sie können erklären, wie Ihnen die Unterscheidung von **Abstraktion** und **Implementierung** hilft, Ordnung in die Komplexität der Informatik zu bringen.
-> - Sie können Benutzer, Anwendungsprogramme, Betriebssystem und Hardware nach "Abstraktheit" sortieren (korrekt ist diese Reihenfolge) und wissen, was mit "Abstraktheit" gemeint ist.
+> - Sie können Benutzer, Anwendungsprogramme, Betriebssystem und Hardware nach "Abstraktheit" sortieren und wissen, was mit "Abstraktheit" in diesem Kontext gemeint ist.
+> - Sie kennen die Grundfunktion eines Betriebssystems.
 
 ## Abstraktion und Implementation von Modulen unterscheiden
 
@@ -62,7 +63,7 @@ print(zahl)
 > **Implementierung / Funktionsweise**: Wie der Prozessor  gebaut wurde und wie er funktioniert. Das ist teilweise ein Geschäftsgeheimnis der Hersteller.
 
 ![[Pasted image 20230807173548.png]]
-> [!question]- Sie kreieren eine **Webseite** für die breite Öffentlichkeit.
+> [!question]- Sie kreieren eine **Webseite**, die auf den gängigen Browsern richtig angezeigt werden soll.
 >
 >Sie nehmen einfach an, dass alle Ihre Besucher Geräte mit einem modernen Browser besitzen. 
 >
@@ -73,13 +74,22 @@ print(zahl)
 
 ![[Pasted image 20230807173846.png]]
 
-> [!question]- Sie versenden **E-Mails**.
+> [!question]- Sie versenden eine **E-Mail** an eine unbekannte Adresse.
 > 
-> Hand aufs Herz: Wann haben Sie das letzte Mal darüber nachgedacht, wie Ihr E-Mail-Programm wohl funktioniert? 😅 Eben. Sie müssen das gar nicht wissen, es muss einfach E-Mails richtig verschicken und empfangen.
+> Hand aufs Herz: Wann haben Sie das letzte Mal darüber nachgedacht, wie Ihr E-Mail-Programm wohl funktioniert? 😅 Eben. Sie müssen das gar nicht wissen. Das Programm muss einfach die E-Mail-Standards korrekt implementieren und Sie müssen darauf vertrauen, dass das E-Mail-Programm des Empfängers dasselbe tut.
 > 
 > **Abstraktion / Schnittstelle**: Moderne Internet- und E-Mail-Standards (wie TCP/IP, SMTP, IMAP, POP...).
 > 
 > **Implementierung / Funktionsweise**: Wie Ihr E-Mail-Programm programmiert wurde. Das ist unter Umständen ebenfalls ein Geschäftsgeheimnis (e.g. Microsoft legt nicht offen, wie Outlook programmiert wurde).
+
+🧑‍💻
+> [!question]- Ein und dieselbe Anwendung wird auf Tausenden Computern installiert
+> 
+> Anwendungen sind meistens nicht von spezifischer Hardware abhängig, sondern sie nutzen einfach die Schnittstellen eines spezifischen Betriebsystems, das alle nötigen Funktionen aller verschiedenen Hardware-Komponenten mit standardisierten Schnittstellen  zur Verfügung stellen sollte.
+> 
+> **Abstraktion / Schnittstelle**: Standardisierte Schnittstellen des Betriebssystems.
+> 
+> **Implementierung / Funktionsweise**: Wie das Betriebsystem die Hardware mit Treibern bedient.
 
 ## Vereinfachte Übersicht & das "Betriebssystem"
 
@@ -87,9 +97,13 @@ Dieses Denken in Modulen hilft uns nun, eine (simplifizierte) Übersicht eines j
 
 ![[aufbau-01-os 2024-04-22 00.00.53.excalidraw]]
 
-Das Betriebssystem (z.B. Windows , MacOS oder eine der vielen Linux-Varianten) ist selbst eine Software – man kann es auf einen USB-Stick speichern oder aus dem Internet herunterladen und auf verschiedenen Computern installieren – aber es hat sehr spezielle Aufgaben: in der Hauptsache ist das Betriebssystem **dafür zuständig, dass andere Programme die Hardware des Computers komfortabel benutzen können**.
+Wenn wir das radikal vereinfachen, können wir uns diese vier Module als Bauteile überlegen, die aufeinander aufbauen - und sehen: Aha, das ist ja wieder ein **Schichtmodell**!
 
-Wie die obenstehende Abbildung nahelegt: **Ein Anwendungsprogramm speichert eine Datei nicht selbst, sondern es bittet das Betriebssystem darum, das zu tun.** Weil das Betriebssystem die gesamte Ordnung der Daten auf der Festplatte überwacht, wird auch verhindert, dass sich verschiedene Programme beim Laden oder Speichern in die Quere kommen, oder dass die Anwendungsprogramme überhaupt wissen müssen, was für eine Festplatte in diesem Computer eingebaut ist – oder was für ein Prozessor, Hauptspeicher oder Bildschirm. Somit müssen Anwendungsprogramme spezifisch für ein bestimmtes Betriebssystem geschrieben sein, nicht aber für alle möglichen Hardwarekombinationen.
+![[aufbau-00-intro 2024-04-22 06.42.20.excalidraw]]
+
+Das Betriebssystem (z.B. Windows , MacOS oder eine der vielen Linux-Varianten) ist selbst eine Software – man kann es auf einen USB-Stick speichern oder aus dem Internet herunterladen und auf verschiedenen Computern installieren – aber es hat sehr spezielle Aufgaben: in der Hauptsache ist das Betriebssystem **dafür zuständig, dass andere Programme die Hardware des Computers komfortabel über standardisierte Schnittstellen benutzen können**. 
+
+Ein Beispiel: **Ein Anwendungsprogramm speichert eine Datei nicht selbst, sondern es bittet das Betriebssystem darum, das zu tun.** Weil das Betriebssystem die gesamte Ordnung der Daten auf der Festplatte überwacht, wird auch verhindert, dass sich verschiedene Programme beim Laden oder Speichern in die Quere kommen, oder dass die Anwendungsprogramme überhaupt wissen müssen, was für eine Festplatte in diesem Computer eingebaut ist – oder was für ein Prozessor, Hauptspeicher oder Bildschirm. Somit müssen Anwendungsprogramme spezifisch für ein bestimmtes Betriebssystem geschrieben sein, nicht aber für alle möglichen Hardwarekombinationen.
 
 Das Betriebssystem selbst muss aber natürlich mit allen möglichen Hardwarekomponenten kommunizieren können, in der für das jeweilige Gerät passenden Sprache. Dafür haben moderne Betriebssysteme sogenannte Treiber (drivers) für fast jedes Gerät verfügbar. Meistens installieren sie diese automatisch, wenn ein neues Gerät erkannt wird (plug & play). 
 

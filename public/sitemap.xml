@@ -428,6 +428,12 @@
 
   <url>
     <loc
+      >https://informatikgarten.ch/3%20Computer%20&%20Netzwerke/1%20Aufbau%20von%20Computern/aufbau-01-cpu</loc
+    >
+  </url>
+
+  <url>
+    <loc
       >https://informatikgarten.ch/3%20Computer%20&%20Netzwerke/1%20Aufbau%20von%20Computern/loading</loc
     >
   </url>
@@ -515,12 +521,6 @@
   <url>
     <loc
       >https://informatikgarten.ch/3%20Computer%20&%20Netzwerke/2%20Netzwerke%20und%20das%20Internet/net-02-networks-G1j</loc
-    >
-  </url>
-
-  <url>
-    <loc
-      >https://informatikgarten.ch/3%20Computer%20&%20Netzwerke/1%20Aufbau%20von%20Computern/aufbau-01-os</loc
     >
   </url>
 
