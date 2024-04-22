@@ -31,10 +31,9 @@ def multiplizieren(a, b):
 	resultat = 0
 	for i in range(a):
 		resultat = resultat + b
-	return resultat
+	print(resultat)
 
-zahl = multiplizieren(3, 4)
-print(zahl)
+multiplizieren(3, 4)
 ```
 
 > [!example] Kurze Diskussion zu zweit
