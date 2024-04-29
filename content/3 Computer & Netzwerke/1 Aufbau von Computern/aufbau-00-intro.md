@@ -3,10 +3,9 @@ title: "00: Denkhilfe & Übersicht"
 ---
 > [!success] Lernziele
 > 
-> - Sie können erklären, wie Ihnen die Unterscheidung von **Abstraktion** und **Implementierung** hilft, Ordnung in die Komplexität der Informatik zu bringen.
+> - Sie können den Unterschied zwischen **Abstraktion** und **Implementierung** eines Moduls beschreiben.
 > - Sie können Benutzer, Anwendungsprogramme, Betriebssystem und Hardware nach "Abstraktheit" sortieren und wissen, was mit "Abstraktheit" in diesem Kontext gemeint ist.
 > - Sie kennen die Grundfunktion eines Betriebssystems.
-
 ## Abstraktion und Implementation von Modulen unterscheiden
 
 > Sie fragen sich vielleicht, wie es möglich ist, ein komplettes Computersystem von Grund auf zu konstruieren, das mit nichts anderem als elementarsten Schaltkreisen beginnt. Das muss ein gigantisches Unterfangen sein! Wir gehen mit dieser Komplexität um, indem wir **das System in Module aufteilen**. Jedes Modul wird ... separat in einem eigenständigen Projekt aufgebaut. Sie werden sich vielleicht fragen, wie es möglich ist, diese Module isoliert zu beschreiben und zu bauen? Sie sind doch sicher miteinander verbunden! Wie wir ... zeigen werden, impliziert ein gutes modulares Design genau das: Sie können an den einzelnen Modulen unabhängig voneinander arbeiten, während Sie den Rest des Systems völlig ignorieren. Wenn das System gut konzipiert ist, können Sie diese Module in beliebiger Reihenfolge und sogar parallel zueinander aufbauen, wenn Sie im Team arbeiten.
@@ -90,7 +89,7 @@ multiplizieren(3, 4)
 > 
 > **Implementierung / Funktionsweise**: Wie das Betriebsystem die Hardware mit Treibern bedient.
 
-## Vereinfachte Übersicht & das "Betriebssystem"
+## Vereinfachte Übersicht
 
 Dieses Denken in Modulen hilft uns nun, eine (simplifizierte) Übersicht eines jeden Computers zu wagen und auf den Begriff des Betriebssystems einzugehen.
 
@@ -100,21 +99,25 @@ Wenn wir das radikal vereinfachen, können wir uns diese vier Module als Bauteil
 
 ![[aufbau-00-intro 2024-04-22 06.42.20.excalidraw]]
 
-Das Betriebssystem (z.B. Windows , MacOS oder eine der vielen Linux-Varianten) ist selbst eine Software – man kann es auf einen USB-Stick speichern oder aus dem Internet herunterladen und auf verschiedenen Computern installieren – aber es hat sehr spezielle Aufgaben: in der Hauptsache ist das Betriebssystem **dafür zuständig, dass andere Programme die Hardware des Computers komfortabel über standardisierte Schnittstellen benutzen können**. 
+## Was macht das Betriebssystem?
 
-Ein Beispiel: **Ein Anwendungsprogramm speichert eine Datei nicht selbst, sondern es bittet das Betriebssystem darum, das zu tun.** Weil das Betriebssystem die gesamte Ordnung der Daten auf der Festplatte überwacht, wird auch verhindert, dass sich verschiedene Programme beim Laden oder Speichern in die Quere kommen, oder dass die Anwendungsprogramme überhaupt wissen müssen, was für eine Festplatte in diesem Computer eingebaut ist – oder was für ein Prozessor, Hauptspeicher oder Bildschirm. Somit müssen Anwendungsprogramme spezifisch für ein bestimmtes Betriebssystem geschrieben sein, nicht aber für alle möglichen Hardwarekombinationen.
+Das Betriebssystem (z.B. Windows , MacOS oder eine der vielen Linux-Varianten) ist selbst eine Software – man kann es auf einen USB-Stick speichern oder aus dem Internet herunterladen und auf verschiedenen Computern installieren – aber es hat sehr spezielle Aufgaben: in der Hauptsache ist das Betriebssystem **dafür zuständig, dass andere Programme die Hardware des Computers über standardisierte Schnittstellen auf geordnete Weise benutzen können**. 
 
-Das Betriebssystem selbst muss aber natürlich mit allen möglichen Hardwarekomponenten kommunizieren können, in der für das jeweilige Gerät passenden Sprache. Dafür haben moderne Betriebssysteme sogenannte Treiber (drivers) für fast jedes Gerät verfügbar. Meistens installieren sie diese automatisch, wenn ein neues Gerät erkannt wird (plug & play). 
+Ein Beispiel: **Ein normales Anwendungsprogramm speichert eine Datei nicht selbst auf der Festplatte, sondern es nutzt die Schnittstelle des Betriebssystems, um das zu tun.** So kann das Betriebssystem die gesamte Ordnung der Daten auf der Festplatte überwachen und verhindern, dass sich die Dutzenden verschiedenen Programme beim Laden oder Speichern in die Quere kommen.
 
-Das Betriebssystem vermittelt also zwischen den Anwendungsprogrammen und der Hardware des Computers, es:
+Das hat einen weiteren Vorteil: Normale Anwendungsprogramme müssen gar nicht wissen, was für eine Festplatte in diesem Computer eingebaut ist – oder was für ein Prozessor, Hauptspeicher oder Bildschirm. Sie schreiben ein Programm für ein spezifisches Betriebssystem und müssen sich nicht um alle möglichen Hardwarekombinationen kümmern.
 
-- organisiert und verwaltet die Speichermedien (RAM, Festplatte, usw.);
-- verwaltet und steuert alle Hardwarekomponenten und Peripheriegeräte und Systemressourcen;
-- regelt, welches Programm wann Zugriff auf die CPU (und sonstige Ressourcen) erhält;
-- installiert, startet, beendet und verwaltet die Anwendungsprogramme;
-- organisiert die Kommunikation mit externen Servern (versenden und empfangen von Daten im Netzwerk);
-- stellt den Anwendungsprogrammen über eine öffentliche API Dienste zur Verfügung (z.B. speichern, laden, drucken, Maus oder Tastatur abfragen, etwas am Bildschirm anzeigen);
-- stellt eine grafische Benutzeroberfläche (GUI, Graphical User Interface) bereit, über die der Benutzer mit Grundfunktionen des Computers interagieren kann (z.B. Installieren und Starten von Programmen, Anzeigen und Verwalten von Dateien, Anzeigen und Beenden von laufenden Prozessen, Fehlermeldungen);
-- verwaltet Benutzer und Rechte (von Benutzern, Anwendungen, usw.);
-- startet und beendet den Betrieb des Computers.
+Diese komplizierte Arbeit wird also vom Betriebssystem übernommen und gegen oben bietet es einheitliche Schnittstellen an. Informatiker würden dazu sagen: Die Hardware wird "weg-abstrahiert". Um mit allen möglichen Hardwarekomponenten kommunizieren zu können, nutzen moderne Betriebssysteme sogenannte Treiber (Englisch: driver). Meistens installieren sie diese automatisch, wenn ein neues Gerät erkannt wird (das nennt man "plug & play"). 
+
+**Das ist also die Kernfunktion des Betriebssystems: Es vermittelt zwischen den Anwendungsprogrammen und der Hardware des Computers und schaut, dass der Zugriff auf die Hardware geordnet abläuft.**
+
+Diese Kernfunktion sehen Sie in vielen Aufgaben, die das Betriebssystem übernimmt: 
+- Speicherverwaltung: Es organisiert und verwaltet Speichermedien wie RAM und Festplatte, und bietet geordneten Schreib- und Lesezugriff.
+- Hardware- und Ressourcensteuerung: Es verwaltet alle Hardwarekomponenten, Peripheriegeräte und Systemressourcen, und bietet Zugriff darauf.
+- Prozessverwaltung: Es regelt den Zugriff von Programmen auf den Prozessor (Central Processing Unit, CPU) und andere Ressourcen, sodass die Hardware optimal ausgelastet ist.
+- Netzwerkkommunikation: Es organisiert den Datenaustausch, implementiert die TCP/IP-Schichten und bietet Programmen eine Schnittstelle dazu.
+- Anwendungsverwaltung: Es installiert, startet, beendet und verwaltet Anwendungsprogramme.
+- Benutzerverwaltung: Es verwaltet Benutzer und deren Rechte.
+- Systemstart und -herunterfahren: Es startet und beendet den Betrieb des Computers.
+- GUI-Bereitstellung (optional): Es stellt eine grafische Benutzeroberfläche bereit, über die der Benutzer mit dem Computer interagieren kann.
 
