@@ -38,19 +38,29 @@ Wenn beide Schalter parallel geschalten sind, muss A **oder** B geschlossen werd
 Wenn beide Schalter seriell geschalten sind, muss A **und** B geschlossen werden, damit die Lampe leuchtet.
 ![[aufbau-01-cpu 2024-04-29 11.34.53.excalidraw]]
 Sie können sich also vorstellen, dass wenn der Stromkreis kompliziert genug ist, Sie damit rechnen können. 
-## Wie ein Computer rechnet
 
-Nun machen wir uns daran, einen Addierer zu bauen. Damit Sie die Übersicht nicht verlieren: Wir werden zuerst 
-1. die nötigen Logikgates bauen 
-2. und dann aus diesen Logikgates den Addierer.
+### Was wichtig ist, was nicht
 
-Der wichtige Teil für Sie ist Nummer 2: Wie man aus Logikgates einen Addierer baut. In der Sprache von Modulen gesprochen:
-- Sie müssen Logikgates nutzen können (Schnittstelle / Abstraktion).
-- Sie müssen den Addierer mit Logikgates implementieren können.
+Im Folgenden machen wir uns daran, einen Addierer zu bauen. Damit Sie die Übersicht nicht verlieren: Wir werden zuerst 
+1. aus Transistoren die nötigen Logikgates bauen 
+2. und dann aus diesen Logikgates den Rechner.
+
+**Der wichtige Teil für Sie ist Nummer 2**: Wie man aus Logikgates einen Addierer baut. In der Sprache von Modulen gesprochen:
+- Sie müssen Logikgates nur nutzen können (die Schnittstelle genügt, die Funktionsweise müssen Sie sich nicht merken).
+- Sie müssen den Addierer mit Logikgates implementieren können (also die Funktionsweise wirklich verstehen).
 
 ![[aufbau-01-cpu 2024-04-29 11.51.26.excalidraw]]
 
-Dazu verwenden wir das [Nand-Game](https://nandgame.com/). 
+## 1. Aus Transistoren bauen wir Logikbausteine
+
+Wir verwenden das [Nand-Game](https://nandgame.com/) um folgende Logikgates zu bauen.
 
 
 ![[Drawing 2024-04-29 07.05.53.excalidraw]]
+
+## 2. Aus Logikbausteinen bauen wir den Rechner
+
+### Halbaddierer
+
+### Addierer
+

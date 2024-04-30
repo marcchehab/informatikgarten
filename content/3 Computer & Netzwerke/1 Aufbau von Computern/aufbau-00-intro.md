@@ -16,6 +16,7 @@ title: "00: Denkhilfe & Übersicht"
 
 In der Welt der Informatik werden abstrakte **Schnittstellen** standardisiert und vorgeschrieben - z.B. Stecker, Kommunikationsprotokolle, die Parameter einer Funktion, etc. Wie ein Modul dann diese Schnittstelle **implementiert**, ist meist freigestellt. Die konkrete Funktionsweise eines Moduls interessiert uns nur, wenn wir dieses Modul verstehen wollen - ansonsten reicht uns die Schnittstelle.
 
+![[aufbau-00-intro 2024-04-29 22.05.17.excalidraw]]
 
 > [!important] Merken Sie sich
 > 
@@ -67,7 +68,7 @@ multiplizieren(3, 4)
 >
 >**Abstraktion / Schnittstelle**: Moderne Internet- und Webstandards (wie TCP/IP, HTTPS, HTML, CSS, Javascript, etc.)
 >
->**Implementierung / Funktionsweise**: Wie der spezifische Browser oder die Geräte ihrer Benutzer funktionieren, können Sie gar nicht wissen und darf ihnen auch egal sein – das ist Sache der Benutzer.
+>**Implementierung / Funktionsweise**: Wie der spezifische Browser oder die Geräte ihrer Benutzer funktionieren, können Sie gar nicht wissen und darf ihnen auch egal sein - das ist Sache der Benutzer.
 
 
 ![[Pasted image 20230807173846.png]]
@@ -101,11 +102,11 @@ Wenn wir das radikal vereinfachen, können wir uns diese vier Module als Bauteil
 
 ## Was macht das Betriebssystem?
 
-Das Betriebssystem (z.B. Windows , MacOS oder eine der vielen Linux-Varianten) ist selbst eine Software – man kann es auf einen USB-Stick speichern oder aus dem Internet herunterladen und auf verschiedenen Computern installieren – aber es hat sehr spezielle Aufgaben: in der Hauptsache ist das Betriebssystem **dafür zuständig, dass andere Programme die Hardware des Computers über standardisierte Schnittstellen auf geordnete Weise benutzen können**. 
+Das Betriebssystem (z.B. Windows , MacOS oder eine der vielen Linux-Varianten) ist selbst eine Software - man kann es auf einen USB-Stick speichern oder aus dem Internet herunterladen und auf verschiedenen Computern installieren - aber es hat sehr spezielle Aufgaben: in der Hauptsache ist das Betriebssystem **dafür zuständig, dass andere Programme die Hardware des Computers über standardisierte Schnittstellen auf geordnete Weise benutzen können**. 
 
 Ein Beispiel: **Ein normales Anwendungsprogramm speichert eine Datei nicht selbst auf der Festplatte, sondern es nutzt die Schnittstelle des Betriebssystems, um das zu tun.** So kann das Betriebssystem die gesamte Ordnung der Daten auf der Festplatte überwachen und verhindern, dass sich die Dutzenden verschiedenen Programme beim Laden oder Speichern in die Quere kommen.
 
-Das hat einen weiteren Vorteil: Normale Anwendungsprogramme müssen gar nicht wissen, was für eine Festplatte in diesem Computer eingebaut ist – oder was für ein Prozessor, Hauptspeicher oder Bildschirm. Sie schreiben ein Programm für ein spezifisches Betriebssystem und müssen sich nicht um alle möglichen Hardwarekombinationen kümmern.
+Das hat einen weiteren Vorteil: Normale Anwendungsprogramme müssen gar nicht wissen, was für eine Festplatte in diesem Computer eingebaut ist - oder was für ein Prozessor, Hauptspeicher oder Bildschirm. Sie schreiben ein Programm für ein spezifisches Betriebssystem und müssen sich nicht um alle möglichen Hardwarekombinationen kümmern.
 
 Diese komplizierte Arbeit wird also vom Betriebssystem übernommen und gegen oben bietet es einheitliche Schnittstellen an. Informatiker würden dazu sagen: Die Hardware wird "weg-abstrahiert". Um mit allen möglichen Hardwarekomponenten kommunizieren zu können, nutzen moderne Betriebssysteme sogenannte Treiber (Englisch: driver). Meistens installieren sie diese automatisch, wenn ein neues Gerät erkannt wird (das nennt man "plug & play"). 
 
