@@ -1,4 +1,627 @@
 {
+  "NandGame:Levels:DFF2": {
+    "nodes": [
+      { "type": "DFF", "x": 277.79998779296875, "y": 627, "id": "0" },
+      { "type": "DFF", "x": 190.79998779296875, "y": 634, "id": "1" }
+    ],
+    "connections": [
+      {
+        "source": { "nodeId": "input", "connectorId": "0" },
+        "target": { "nodeId": "0", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "input", "connectorId": "2" },
+        "target": { "nodeId": "0", "connectorId": "1" }
+      },
+      {
+        "source": { "nodeId": "input", "connectorId": "3" },
+        "target": { "nodeId": "0", "connectorId": "2" }
+      },
+      {
+        "source": { "nodeId": "input", "connectorId": "0" },
+        "target": { "nodeId": "1", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "input", "connectorId": "1" },
+        "target": { "nodeId": "1", "connectorId": "1" }
+      },
+      {
+        "source": { "nodeId": "input", "connectorId": "3" },
+        "target": { "nodeId": "1", "connectorId": "2" }
+      },
+      {
+        "source": { "nodeId": "1", "connectorId": "0" },
+        "target": { "nodeId": "output", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "0", "connectorId": "0" },
+        "target": { "nodeId": "output", "connectorId": "1" }
+      }
+    ]
+  },
+  "NandGame:Levels:AND": {
+    "nodes": [
+      { "type": "NAND", "x": 86.79998779296875, "y": 427, "id": "0" },
+      { "type": "INV", "x": 94.79998779296875, "y": 288, "id": "1" }
+    ],
+    "connections": [
+      {
+        "source": { "nodeId": "input", "connectorId": "0" },
+        "target": { "nodeId": "0", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "input", "connectorId": "1" },
+        "target": { "nodeId": "0", "connectorId": "1" }
+      },
+      {
+        "source": { "nodeId": "0", "connectorId": "0" },
+        "target": { "nodeId": "1", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "1", "connectorId": "0" },
+        "target": { "nodeId": "output", "connectorId": "0" }
+      }
+    ]
+  },
+  "NandGame:Levels:ISZERO": {
+    "nodes": [
+      { "type": "OR", "x": 78.79998779296875, "y": 643, "id": "0" },
+      { "type": "OR", "x": 202.79998779296875, "y": 641, "id": "1" },
+      { "type": "OR", "x": 144.79998779296875, "y": 486, "id": "2" },
+      { "type": "INV", "x": 105.79998779296875, "y": 331, "id": "3" }
+    ],
+    "connections": [
+      {
+        "source": { "nodeId": "input", "connectorId": "0" },
+        "target": { "nodeId": "0", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "input", "connectorId": "1" },
+        "target": { "nodeId": "0", "connectorId": "1" }
+      },
+      {
+        "source": { "nodeId": "input", "connectorId": "2" },
+        "target": { "nodeId": "1", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "input", "connectorId": "3" },
+        "target": { "nodeId": "1", "connectorId": "1" }
+      },
+      {
+        "source": { "nodeId": "0", "connectorId": "0" },
+        "target": { "nodeId": "2", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "1", "connectorId": "0" },
+        "target": { "nodeId": "2", "connectorId": "1" }
+      },
+      {
+        "source": { "nodeId": "2", "connectorId": "0" },
+        "target": { "nodeId": "3", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "3", "connectorId": "0" },
+        "target": { "nodeId": "output", "connectorId": "0" }
+      }
+    ]
+  },
+  "NandGame:Levels:CONTROL_UNIT": {
+    "nodes": [
+      {
+        "type": "ALU_INSTRUCTION",
+        "x": 402.79998779296875,
+        "y": 592,
+        "id": "0"
+      },
+      { "type": "SPLIT16", "x": -1.199981689453125, "y": 602, "id": "1" },
+      {
+        "type": "SELECT16",
+        "x": 113.79998779296875,
+        "y": 189.20001220703125,
+        "id": "2"
+      },
+      {
+        "type": "SELECT16",
+        "x": 390.79998779296875,
+        "y": 264.20001220703125,
+        "id": "3"
+      },
+      {
+        "type": "BUNDLE16",
+        "x": 337.79998779296875,
+        "y": 415.8000183105469,
+        "id": "4"
+      },
+      {
+        "type": "BUNDLE16",
+        "x": 718.7999877929688,
+        "y": 424.79998779296875,
+        "id": "5"
+      },
+      {
+        "type": "SPLIT16",
+        "x": 228.79998779296875,
+        "y": 191.1999969482422,
+        "id": "6"
+      },
+      {
+        "type": "ZERO",
+        "x": 923.7999877929688,
+        "y": 576.4000244140625,
+        "id": "7"
+      },
+      {
+        "type": "INV",
+        "x": 1039.7999877929688,
+        "y": 572.4000244140625,
+        "id": "8"
+      }
+    ],
+    "connections": [
+      {
+        "source": { "nodeId": "input", "connectorId": "0" },
+        "target": { "nodeId": "0", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "input", "connectorId": "1" },
+        "target": { "nodeId": "0", "connectorId": "1" }
+      },
+      {
+        "source": { "nodeId": "input", "connectorId": "2" },
+        "target": { "nodeId": "0", "connectorId": "2" }
+      },
+      {
+        "source": { "nodeId": "input", "connectorId": "3" },
+        "target": { "nodeId": "0", "connectorId": "3" }
+      },
+      {
+        "source": { "nodeId": "input", "connectorId": "0" },
+        "target": { "nodeId": "1", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "1", "connectorId": "0" },
+        "target": { "nodeId": "2", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "0", "connectorId": "0" },
+        "target": { "nodeId": "2", "connectorId": "1" }
+      },
+      {
+        "source": { "nodeId": "input", "connectorId": "0" },
+        "target": { "nodeId": "2", "connectorId": "2" }
+      },
+      {
+        "source": { "nodeId": "1", "connectorId": "0" },
+        "target": { "nodeId": "3", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "4", "connectorId": "0" },
+        "target": { "nodeId": "3", "connectorId": "1" }
+      },
+      {
+        "source": { "nodeId": "5", "connectorId": "0" },
+        "target": { "nodeId": "3", "connectorId": "2" }
+      },
+      {
+        "source": { "nodeId": "0", "connectorId": "1" },
+        "target": { "nodeId": "4", "connectorId": "12" }
+      },
+      {
+        "source": { "nodeId": "0", "connectorId": "2" },
+        "target": { "nodeId": "4", "connectorId": "13" }
+      },
+      {
+        "source": { "nodeId": "0", "connectorId": "3" },
+        "target": { "nodeId": "4", "connectorId": "14" }
+      },
+      {
+        "source": { "nodeId": "0", "connectorId": "4" },
+        "target": { "nodeId": "4", "connectorId": "15" }
+      },
+      {
+        "source": { "nodeId": "8", "connectorId": "0" },
+        "target": { "nodeId": "5", "connectorId": "12" }
+      },
+      {
+        "source": { "nodeId": "3", "connectorId": "0" },
+        "target": { "nodeId": "6", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "7", "connectorId": "0" },
+        "target": { "nodeId": "8", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "2", "connectorId": "0" },
+        "target": { "nodeId": "output", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "6", "connectorId": "12" },
+        "target": { "nodeId": "output", "connectorId": "1" }
+      },
+      {
+        "source": { "nodeId": "6", "connectorId": "13" },
+        "target": { "nodeId": "output", "connectorId": "2" }
+      },
+      {
+        "source": { "nodeId": "6", "connectorId": "14" },
+        "target": { "nodeId": "output", "connectorId": "3" }
+      },
+      {
+        "source": { "nodeId": "6", "connectorId": "15" },
+        "target": { "nodeId": "output", "connectorId": "4" }
+      }
+    ]
+  },
+  "NandGame:Levels:SIGN": {
+    "nodes": [
+      { "type": "SPLIT16", "x": 56.800018310546875, "y": 371, "id": "0" }
+    ],
+    "connections": [
+      {
+        "source": { "nodeId": "input", "connectorId": "0" },
+        "target": { "nodeId": "0", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "0", "connectorId": "0" },
+        "target": { "nodeId": "output", "connectorId": "0" }
+      }
+    ]
+  },
+  "NandGame:Levels:FULLADD": {
+    "nodes": [
+      { "type": "HALFADD", "x": 116.79998779296875, "y": 522, "id": "0" },
+      { "type": "HALFADD", "x": 216.79998779296875, "y": 424, "id": "1" },
+      { "type": "OR", "x": 119.79998779296875, "y": 303, "id": "2" }
+    ],
+    "connections": [
+      {
+        "source": { "nodeId": "input", "connectorId": "0" },
+        "target": { "nodeId": "0", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "input", "connectorId": "1" },
+        "target": { "nodeId": "0", "connectorId": "1" }
+      },
+      {
+        "source": { "nodeId": "0", "connectorId": "1" },
+        "target": { "nodeId": "1", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "input", "connectorId": "2" },
+        "target": { "nodeId": "1", "connectorId": "1" }
+      },
+      {
+        "source": { "nodeId": "0", "connectorId": "0" },
+        "target": { "nodeId": "2", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "1", "connectorId": "0" },
+        "target": { "nodeId": "2", "connectorId": "1" }
+      },
+      {
+        "source": { "nodeId": "2", "connectorId": "0" },
+        "target": { "nodeId": "output", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "1", "connectorId": "1" },
+        "target": { "nodeId": "output", "connectorId": "1" }
+      }
+    ]
+  },
+  "NandGame:Levels:DEMUX": {
+    "nodes": [
+      { "type": "AND", "x": 296.79998779296875, "y": 471, "id": "0" },
+      { "type": "INV", "x": 190.80001831054688, "y": 569, "id": "1" },
+      { "type": "AND", "x": 58.800018310546875, "y": 415, "id": "2" }
+    ],
+    "connections": [
+      {
+        "source": { "nodeId": "1", "connectorId": "0" },
+        "target": { "nodeId": "0", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "input", "connectorId": "1" },
+        "target": { "nodeId": "0", "connectorId": "1" }
+      },
+      {
+        "source": { "nodeId": "input", "connectorId": "0" },
+        "target": { "nodeId": "1", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "input", "connectorId": "0" },
+        "target": { "nodeId": "2", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "input", "connectorId": "1" },
+        "target": { "nodeId": "2", "connectorId": "1" }
+      },
+      {
+        "source": { "nodeId": "2", "connectorId": "0" },
+        "target": { "nodeId": "output", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "0", "connectorId": "0" },
+        "target": { "nodeId": "output", "connectorId": "1" }
+      }
+    ]
+  },
+  "NandGame:Levels": [
+    "RELAY_NAND",
+    "INV",
+    "AND",
+    "OR",
+    "XOR",
+    "HALFADD",
+    "FULLADD",
+    "ADD2",
+    "INC",
+    "SUB",
+    "ISZERO",
+    "SIGN",
+    "MULTIPLEXER",
+    "DEMUX",
+    "ALU_LOGIC",
+    "ALU_ARITHMETIC",
+    "ALU2",
+    "CONDITION",
+    "LATCH",
+    "DFF",
+    "DFF2",
+    "COUNTER",
+    "RAM",
+    "CPU_STATE",
+    "ALU_INSTRUCTION",
+    "CONTROL_UNIT",
+    "CPU3",
+    "IO2",
+    "PROGRAM1",
+    "OPCODES2",
+    "ASSEMBLER1"
+  ],
+  "NandGame:CustomComponents": ["1"],
+  "NandGame:Levels:COUNTER": {
+    "nodes": [
+      { "type": "SELECT16", "x": 126.79998779296875, "y": 598, "id": "0" },
+      { "type": "INC16", "x": 225.79998779296875, "y": 324, "id": "1" },
+      { "type": "DFF16", "x": 417.79998779296875, "y": 413, "id": "2" },
+      { "type": "ZERO", "x": 229.80001831054688, "y": 446, "id": "3" },
+      { "type": "INV", "x": 322.8000183105469, "y": 442, "id": "4" }
+    ],
+    "connections": [
+      {
+        "source": { "nodeId": "input", "connectorId": "0" },
+        "target": { "nodeId": "0", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "input", "connectorId": "1" },
+        "target": { "nodeId": "0", "connectorId": "1" }
+      },
+      {
+        "source": { "nodeId": "1", "connectorId": "0" },
+        "target": { "nodeId": "0", "connectorId": "2" }
+      },
+      {
+        "source": { "nodeId": "2", "connectorId": "0" },
+        "target": { "nodeId": "1", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "4", "connectorId": "0" },
+        "target": { "nodeId": "2", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "0", "connectorId": "0" },
+        "target": { "nodeId": "2", "connectorId": "1" }
+      },
+      {
+        "source": { "nodeId": "input", "connectorId": "2" },
+        "target": { "nodeId": "2", "connectorId": "2" }
+      },
+      {
+        "source": { "nodeId": "3", "connectorId": "0" },
+        "target": { "nodeId": "4", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "2", "connectorId": "0" },
+        "target": { "nodeId": "output", "connectorId": "0" }
+      }
+    ]
+  },
+  "NandGame:Levels:CPU3": {
+    "nodes": [
+      { "type": "CONTROL_UNIT", "x": 389.79998779296875, "y": 388, "id": "0" },
+      { "type": "STATE", "x": 624.7999877929688, "y": 263, "id": "1" },
+      {
+        "type": "ROM",
+        "x": 125.79998779296875,
+        "y": 473.79998779296875,
+        "id": "2",
+        "state": { "words": [1, 2, 3, 4, 5, 6, 7, 8] }
+      },
+      {
+        "type": "COUNTER",
+        "x": 426.79998779296875,
+        "y": 598.7999877929688,
+        "id": "3"
+      },
+      {
+        "type": "CLOCK",
+        "x": 705.800048828125,
+        "y": 703.7999877929688,
+        "id": "4"
+      }
+    ],
+    "connections": [
+      {
+        "source": { "nodeId": "2", "connectorId": "0" },
+        "target": { "nodeId": "0", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "1", "connectorId": "0" },
+        "target": { "nodeId": "0", "connectorId": "1" }
+      },
+      {
+        "source": { "nodeId": "1", "connectorId": "1" },
+        "target": { "nodeId": "0", "connectorId": "2" }
+      },
+      {
+        "source": { "nodeId": "1", "connectorId": "2" },
+        "target": { "nodeId": "0", "connectorId": "3" }
+      },
+      {
+        "source": { "nodeId": "0", "connectorId": "1" },
+        "target": { "nodeId": "1", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "0", "connectorId": "2" },
+        "target": { "nodeId": "1", "connectorId": "1" }
+      },
+      {
+        "source": { "nodeId": "0", "connectorId": "3" },
+        "target": { "nodeId": "1", "connectorId": "2" }
+      },
+      {
+        "source": { "nodeId": "0", "connectorId": "0" },
+        "target": { "nodeId": "1", "connectorId": "3" }
+      },
+      {
+        "source": { "nodeId": "4", "connectorId": "0" },
+        "target": { "nodeId": "1", "connectorId": "4" }
+      },
+      {
+        "source": { "nodeId": "3", "connectorId": "0" },
+        "target": { "nodeId": "2", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "0", "connectorId": "4" },
+        "target": { "nodeId": "3", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "1", "connectorId": "0" },
+        "target": { "nodeId": "3", "connectorId": "1" }
+      },
+      {
+        "source": { "nodeId": "4", "connectorId": "0" },
+        "target": { "nodeId": "3", "connectorId": "2" }
+      }
+    ]
+  },
+  "NandGame:CustomComponent:1": {
+    "key": "1",
+    "name": "Multibit Addierer",
+    "inputs": [
+      { "pins": [{ "label": "", "width": 16 }] },
+      { "pins": [{ "label": "", "width": 16 }] }
+    ],
+    "outputs": [{ "pins": [{ "label": "", "width": 16 }] }],
+    "diagram": {
+      "nodes": [
+        {
+          "type": "ADDC",
+          "x": 927.7999877929688,
+          "y": 548.9999923706055,
+          "id": "0"
+        },
+        {
+          "type": "SPLIT16",
+          "x": 557.7999877929688,
+          "y": 719.0000228881836,
+          "id": "1"
+        },
+        {
+          "type": "SPLIT16",
+          "x": 25.800018310546875,
+          "y": 720.0000228881836,
+          "id": "2"
+        },
+        {
+          "type": "HALFADD",
+          "x": 1027.800048828125,
+          "y": 558.0000228881836,
+          "id": "3"
+        },
+        {
+          "type": "BUNDLE16",
+          "x": 73.79998779296875,
+          "y": 162.80001068115234,
+          "id": "4"
+        },
+        {
+          "type": "ADDC",
+          "x": 801.7999877929688,
+          "y": 546.0000228881836,
+          "id": "5"
+        },
+        {
+          "type": "ADDC",
+          "x": 690.800048828125,
+          "y": 543.0000228881836,
+          "id": "6"
+        }
+      ],
+      "connections": [
+        {
+          "source": { "nodeId": "2", "connectorId": "14" },
+          "target": { "nodeId": "0", "connectorId": "0" }
+        },
+        {
+          "source": { "nodeId": "1", "connectorId": "14" },
+          "target": { "nodeId": "0", "connectorId": "1" }
+        },
+        {
+          "source": { "nodeId": "3", "connectorId": "0" },
+          "target": { "nodeId": "0", "connectorId": "2" }
+        },
+        {
+          "source": { "nodeId": "input", "connectorId": "1" },
+          "target": { "nodeId": "1", "connectorId": "0" }
+        },
+        {
+          "source": { "nodeId": "input", "connectorId": "0" },
+          "target": { "nodeId": "2", "connectorId": "0" }
+        },
+        {
+          "source": { "nodeId": "2", "connectorId": "15" },
+          "target": { "nodeId": "3", "connectorId": "0" }
+        },
+        {
+          "source": { "nodeId": "1", "connectorId": "15" },
+          "target": { "nodeId": "3", "connectorId": "1" }
+        },
+        {
+          "source": { "nodeId": "5", "connectorId": "1" },
+          "target": { "nodeId": "4", "connectorId": "13" }
+        },
+        {
+          "source": { "nodeId": "0", "connectorId": "1" },
+          "target": { "nodeId": "4", "connectorId": "14" }
+        },
+        {
+          "source": { "nodeId": "3", "connectorId": "1" },
+          "target": { "nodeId": "4", "connectorId": "15" }
+        },
+        {
+          "source": { "nodeId": "2", "connectorId": "13" },
+          "target": { "nodeId": "5", "connectorId": "0" }
+        },
+        {
+          "source": { "nodeId": "1", "connectorId": "13" },
+          "target": { "nodeId": "5", "connectorId": "1" }
+        },
+        {
+          "source": { "nodeId": "0", "connectorId": "0" },
+          "target": { "nodeId": "5", "connectorId": "2" }
+        },
+        {
+          "source": { "nodeId": "5", "connectorId": "0" },
+          "target": { "nodeId": "6", "connectorId": "2" }
+        },
+        {
+          "source": { "nodeId": "4", "connectorId": "0" },
+          "target": { "nodeId": "output", "connectorId": "4" }
+        }
+      ]
+    }
+  },
   "NandGame:Levels:MULTIPLEXER": {
     "nodes": [
       { "type": "AND", "x": 48.79998779296875, "y": 522, "id": "0" },
@@ -58,10 +681,12 @@
       }
     ]
   },
-  "NandGame:Levels:AND": {
+  "NandGame:Levels:PROGRAM1": { "code": [32912, 2, 34064, 32775] },
+  "NandGame:Levels:CPU_STATE": {
     "nodes": [
-      { "type": "NAND", "x": 86.79998779296875, "y": 427, "id": "0" },
-      { "type": "INV", "x": 94.79998779296875, "y": 288, "id": "1" }
+      { "type": "DFF16", "x": 60.79998779296875, "y": 443, "id": "0" },
+      { "type": "RAM", "x": 638.7999877929688, "y": 422, "id": "1" },
+      { "type": "DFF16", "x": 341.79998779296875, "y": 435, "id": "2" }
     ],
     "connections": [
       {
@@ -69,48 +694,52 @@
         "target": { "nodeId": "0", "connectorId": "0" }
       },
       {
-        "source": { "nodeId": "input", "connectorId": "1" },
+        "source": { "nodeId": "input", "connectorId": "3" },
         "target": { "nodeId": "0", "connectorId": "1" }
       },
       {
-        "source": { "nodeId": "0", "connectorId": "0" },
+        "source": { "nodeId": "input", "connectorId": "4" },
+        "target": { "nodeId": "0", "connectorId": "2" }
+      },
+      {
+        "source": { "nodeId": "input", "connectorId": "2" },
         "target": { "nodeId": "1", "connectorId": "0" }
       },
       {
-        "source": { "nodeId": "1", "connectorId": "0" },
-        "target": { "nodeId": "output", "connectorId": "0" }
-      }
-    ]
-  },
-  "NandGame:Levels:HALFADD": {
-    "nodes": [
-      { "type": "XOR", "x": 172.79998779296875, "y": 510, "id": "0" },
-      { "type": "AND", "x": 56.800018310546875, "y": 506, "id": "1" }
-    ],
-    "connections": [
-      {
-        "source": { "nodeId": "input", "connectorId": "0" },
-        "target": { "nodeId": "0", "connectorId": "0" }
-      },
-      {
-        "source": { "nodeId": "input", "connectorId": "1" },
-        "target": { "nodeId": "0", "connectorId": "1" }
-      },
-      {
-        "source": { "nodeId": "input", "connectorId": "0" },
-        "target": { "nodeId": "1", "connectorId": "0" }
-      },
-      {
-        "source": { "nodeId": "input", "connectorId": "1" },
+        "source": { "nodeId": "input", "connectorId": "3" },
         "target": { "nodeId": "1", "connectorId": "1" }
       },
       {
-        "source": { "nodeId": "1", "connectorId": "0" },
-        "target": { "nodeId": "output", "connectorId": "0" }
+        "source": { "nodeId": "0", "connectorId": "0" },
+        "target": { "nodeId": "1", "connectorId": "2" }
+      },
+      {
+        "source": { "nodeId": "input", "connectorId": "4" },
+        "target": { "nodeId": "1", "connectorId": "3" }
+      },
+      {
+        "source": { "nodeId": "input", "connectorId": "1" },
+        "target": { "nodeId": "2", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "input", "connectorId": "3" },
+        "target": { "nodeId": "2", "connectorId": "1" }
+      },
+      {
+        "source": { "nodeId": "input", "connectorId": "4" },
+        "target": { "nodeId": "2", "connectorId": "2" }
       },
       {
         "source": { "nodeId": "0", "connectorId": "0" },
+        "target": { "nodeId": "output", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "2", "connectorId": "0" },
         "target": { "nodeId": "output", "connectorId": "1" }
+      },
+      {
+        "source": { "nodeId": "1", "connectorId": "0" },
+        "target": { "nodeId": "output", "connectorId": "2" }
       }
     ]
   },
@@ -193,12 +822,10 @@
       }
     ]
   },
-  "NandGame:Levels:ISZERO": {
+  "NandGame:Levels:HALFADD": {
     "nodes": [
-      { "type": "OR", "x": 78.79998779296875, "y": 643, "id": "0" },
-      { "type": "OR", "x": 202.79998779296875, "y": 641, "id": "1" },
-      { "type": "OR", "x": 144.79998779296875, "y": 486, "id": "2" },
-      { "type": "INV", "x": 105.79998779296875, "y": 331, "id": "3" }
+      { "type": "XOR", "x": 172.79998779296875, "y": 510, "id": "0" },
+      { "type": "AND", "x": 56.800018310546875, "y": 506, "id": "1" }
     ],
     "connections": [
       {
@@ -210,15 +837,57 @@
         "target": { "nodeId": "0", "connectorId": "1" }
       },
       {
-        "source": { "nodeId": "input", "connectorId": "2" },
+        "source": { "nodeId": "input", "connectorId": "0" },
         "target": { "nodeId": "1", "connectorId": "0" }
       },
       {
-        "source": { "nodeId": "input", "connectorId": "3" },
+        "source": { "nodeId": "input", "connectorId": "1" },
         "target": { "nodeId": "1", "connectorId": "1" }
       },
       {
+        "source": { "nodeId": "1", "connectorId": "0" },
+        "target": { "nodeId": "output", "connectorId": "0" }
+      },
+      {
         "source": { "nodeId": "0", "connectorId": "0" },
+        "target": { "nodeId": "output", "connectorId": "1" }
+      }
+    ]
+  },
+  "NandGame:Levels:RAM": {
+    "nodes": [
+      { "type": "DFF16", "x": 183.79998779296875, "y": 382, "id": "0" },
+      { "type": "DFF16", "x": 356.79998779296875, "y": 377, "id": "1" },
+      { "type": "SELECT16", "x": 215.79998779296875, "y": 222, "id": "2" },
+      { "type": "DEMUX", "x": 156.79998779296875, "y": 660, "id": "3" }
+    ],
+    "connections": [
+      {
+        "source": { "nodeId": "3", "connectorId": "1" },
+        "target": { "nodeId": "0", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "input", "connectorId": "2" },
+        "target": { "nodeId": "0", "connectorId": "1" }
+      },
+      {
+        "source": { "nodeId": "input", "connectorId": "3" },
+        "target": { "nodeId": "0", "connectorId": "2" }
+      },
+      {
+        "source": { "nodeId": "3", "connectorId": "0" },
+        "target": { "nodeId": "1", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "input", "connectorId": "2" },
+        "target": { "nodeId": "1", "connectorId": "1" }
+      },
+      {
+        "source": { "nodeId": "input", "connectorId": "3" },
+        "target": { "nodeId": "1", "connectorId": "2" }
+      },
+      {
+        "source": { "nodeId": "input", "connectorId": "0" },
         "target": { "nodeId": "2", "connectorId": "0" }
       },
       {
@@ -226,11 +895,19 @@
         "target": { "nodeId": "2", "connectorId": "1" }
       },
       {
-        "source": { "nodeId": "2", "connectorId": "0" },
+        "source": { "nodeId": "0", "connectorId": "0" },
+        "target": { "nodeId": "2", "connectorId": "2" }
+      },
+      {
+        "source": { "nodeId": "input", "connectorId": "0" },
         "target": { "nodeId": "3", "connectorId": "0" }
       },
       {
-        "source": { "nodeId": "3", "connectorId": "0" },
+        "source": { "nodeId": "input", "connectorId": "1" },
+        "target": { "nodeId": "3", "connectorId": "1" }
+      },
+      {
+        "source": { "nodeId": "2", "connectorId": "0" },
         "target": { "nodeId": "output", "connectorId": "0" }
       }
     ]
@@ -260,6 +937,88 @@
       },
       {
         "source": { "nodeId": "2", "connectorId": "0" },
+        "target": { "nodeId": "output", "connectorId": "0" }
+      }
+    ]
+  },
+  "NandGame:Levels:IO2": {
+    "nodes": [
+      { "type": "BUTTON", "x": 61.79998779296875, "y": 253, "id": "0" },
+      {
+        "type": "LAMP",
+        "x": 285.79998779296875,
+        "y": 209.80001831054688,
+        "id": "1"
+      },
+      { "type": "SPLIT16", "x": 155.79998779296875, "y": 580, "id": "2" },
+      {
+        "type": "AND",
+        "x": 94.80001831054688,
+        "y": 484.4000244140625,
+        "id": "3"
+      },
+      {
+        "type": "AND",
+        "x": 228.79998779296875,
+        "y": 430.4000244140625,
+        "id": "4"
+      },
+      {
+        "type": "AND",
+        "x": 333.79998779296875,
+        "y": 426.4000244140625,
+        "id": "5"
+      },
+      {
+        "type": "BUNDLE16",
+        "x": 67.80001831054688,
+        "y": 115.80000305175781,
+        "id": "6"
+      }
+    ],
+    "connections": [
+      {
+        "source": { "nodeId": "4", "connectorId": "0" },
+        "target": { "nodeId": "1", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "5", "connectorId": "0" },
+        "target": { "nodeId": "1", "connectorId": "1" }
+      },
+      {
+        "source": { "nodeId": "input", "connectorId": "1" },
+        "target": { "nodeId": "2", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "input", "connectorId": "0" },
+        "target": { "nodeId": "3", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "input", "connectorId": "2" },
+        "target": { "nodeId": "3", "connectorId": "1" }
+      },
+      {
+        "source": { "nodeId": "3", "connectorId": "0" },
+        "target": { "nodeId": "4", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "2", "connectorId": "14" },
+        "target": { "nodeId": "4", "connectorId": "1" }
+      },
+      {
+        "source": { "nodeId": "3", "connectorId": "0" },
+        "target": { "nodeId": "5", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "2", "connectorId": "15" },
+        "target": { "nodeId": "5", "connectorId": "1" }
+      },
+      {
+        "source": { "nodeId": "0", "connectorId": "0" },
+        "target": { "nodeId": "6", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "6", "connectorId": "0" },
         "target": { "nodeId": "output", "connectorId": "0" }
       }
     ]
@@ -432,62 +1191,6 @@
       }
     ]
   },
-  "NandGame:Levels:SIGN": {
-    "nodes": [
-      { "type": "SPLIT16", "x": 56.800018310546875, "y": 371, "id": "0" }
-    ],
-    "connections": [
-      {
-        "source": { "nodeId": "input", "connectorId": "0" },
-        "target": { "nodeId": "0", "connectorId": "0" }
-      },
-      {
-        "source": { "nodeId": "0", "connectorId": "0" },
-        "target": { "nodeId": "output", "connectorId": "0" }
-      }
-    ]
-  },
-  "NandGame:Levels:FULLADD": {
-    "nodes": [
-      { "type": "HALFADD", "x": 116.79998779296875, "y": 522, "id": "0" },
-      { "type": "HALFADD", "x": 216.79998779296875, "y": 424, "id": "1" },
-      { "type": "OR", "x": 119.79998779296875, "y": 303, "id": "2" }
-    ],
-    "connections": [
-      {
-        "source": { "nodeId": "input", "connectorId": "0" },
-        "target": { "nodeId": "0", "connectorId": "0" }
-      },
-      {
-        "source": { "nodeId": "input", "connectorId": "1" },
-        "target": { "nodeId": "0", "connectorId": "1" }
-      },
-      {
-        "source": { "nodeId": "0", "connectorId": "1" },
-        "target": { "nodeId": "1", "connectorId": "0" }
-      },
-      {
-        "source": { "nodeId": "input", "connectorId": "2" },
-        "target": { "nodeId": "1", "connectorId": "1" }
-      },
-      {
-        "source": { "nodeId": "0", "connectorId": "0" },
-        "target": { "nodeId": "2", "connectorId": "0" }
-      },
-      {
-        "source": { "nodeId": "1", "connectorId": "0" },
-        "target": { "nodeId": "2", "connectorId": "1" }
-      },
-      {
-        "source": { "nodeId": "2", "connectorId": "0" },
-        "target": { "nodeId": "output", "connectorId": "0" }
-      },
-      {
-        "source": { "nodeId": "1", "connectorId": "1" },
-        "target": { "nodeId": "output", "connectorId": "1" }
-      }
-    ]
-  },
   "NandGame:Levels:ALU2": {
     "nodes": [
       {
@@ -592,43 +1295,6 @@
       }
     ]
   },
-  "NandGame:Levels:DEMUX": {
-    "nodes": [
-      { "type": "AND", "x": 296.79998779296875, "y": 471, "id": "0" },
-      { "type": "INV", "x": 190.80001831054688, "y": 569, "id": "1" },
-      { "type": "AND", "x": 58.800018310546875, "y": 415, "id": "2" }
-    ],
-    "connections": [
-      {
-        "source": { "nodeId": "1", "connectorId": "0" },
-        "target": { "nodeId": "0", "connectorId": "0" }
-      },
-      {
-        "source": { "nodeId": "input", "connectorId": "1" },
-        "target": { "nodeId": "0", "connectorId": "1" }
-      },
-      {
-        "source": { "nodeId": "input", "connectorId": "0" },
-        "target": { "nodeId": "1", "connectorId": "0" }
-      },
-      {
-        "source": { "nodeId": "input", "connectorId": "0" },
-        "target": { "nodeId": "2", "connectorId": "0" }
-      },
-      {
-        "source": { "nodeId": "input", "connectorId": "1" },
-        "target": { "nodeId": "2", "connectorId": "1" }
-      },
-      {
-        "source": { "nodeId": "2", "connectorId": "0" },
-        "target": { "nodeId": "output", "connectorId": "0" }
-      },
-      {
-        "source": { "nodeId": "0", "connectorId": "0" },
-        "target": { "nodeId": "output", "connectorId": "1" }
-      }
-    ]
-  },
   "NandGame:Levels:INC": {
     "nodes": [
       { "type": "ADDC16", "x": 214.79998779296875, "y": 404, "id": "0" },
@@ -654,28 +1320,6 @@
       }
     ]
   },
-  "NandGame:Levels": [
-    "RELAY_NAND",
-    "INV",
-    "AND",
-    "OR",
-    "XOR",
-    "HALFADD",
-    "FULLADD",
-    "ADD2",
-    "INC",
-    "SUB",
-    "ISZERO",
-    "SIGN",
-    "MULTIPLEXER",
-    "DEMUX",
-    "ALU_LOGIC",
-    "ALU_ARITHMETIC",
-    "ALU2",
-    "CONDITION",
-    "LATCH",
-    "DFF"
-  ],
   "NandGame:Levels:RELAY_NAND": {
     "nodes": [
       { "type": "RELAY-ON", "x": 221.79998779296875, "y": 277, "id": "0" },
@@ -748,9 +1392,104 @@
       }
     ]
   },
+  "NandGame:Levels:ALU_INSTRUCTION": {
+    "nodes": [
+      { "type": "ALU2", "x": 114.79998779296875, "y": 354, "id": "0" },
+      { "type": "SPLIT16", "x": 4.800018310546875, "y": 633, "id": "1" },
+      {
+        "type": "SELECT16",
+        "x": 517.7999877929688,
+        "y": 512.6000366210938,
+        "id": "2"
+      },
+      { "type": "CONDITION2", "x": 353.79998779296875, "y": 210, "id": "3" }
+    ],
+    "connections": [
+      {
+        "source": { "nodeId": "1", "connectorId": "5" },
+        "target": { "nodeId": "0", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "1", "connectorId": "6" },
+        "target": { "nodeId": "0", "connectorId": "1" }
+      },
+      {
+        "source": { "nodeId": "1", "connectorId": "7" },
+        "target": { "nodeId": "0", "connectorId": "2" }
+      },
+      {
+        "source": { "nodeId": "1", "connectorId": "8" },
+        "target": { "nodeId": "0", "connectorId": "3" }
+      },
+      {
+        "source": { "nodeId": "1", "connectorId": "9" },
+        "target": { "nodeId": "0", "connectorId": "4" }
+      },
+      {
+        "source": { "nodeId": "input", "connectorId": "2" },
+        "target": { "nodeId": "0", "connectorId": "5" }
+      },
+      {
+        "source": { "nodeId": "2", "connectorId": "0" },
+        "target": { "nodeId": "0", "connectorId": "6" }
+      },
+      {
+        "source": { "nodeId": "input", "connectorId": "0" },
+        "target": { "nodeId": "1", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "1", "connectorId": "3" },
+        "target": { "nodeId": "2", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "input", "connectorId": "3" },
+        "target": { "nodeId": "2", "connectorId": "1" }
+      },
+      {
+        "source": { "nodeId": "input", "connectorId": "1" },
+        "target": { "nodeId": "2", "connectorId": "2" }
+      },
+      {
+        "source": { "nodeId": "1", "connectorId": "13" },
+        "target": { "nodeId": "3", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "1", "connectorId": "14" },
+        "target": { "nodeId": "3", "connectorId": "1" }
+      },
+      {
+        "source": { "nodeId": "1", "connectorId": "15" },
+        "target": { "nodeId": "3", "connectorId": "2" }
+      },
+      {
+        "source": { "nodeId": "0", "connectorId": "0" },
+        "target": { "nodeId": "3", "connectorId": "3" }
+      },
+      {
+        "source": { "nodeId": "0", "connectorId": "0" },
+        "target": { "nodeId": "output", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "1", "connectorId": "10" },
+        "target": { "nodeId": "output", "connectorId": "1" }
+      },
+      {
+        "source": { "nodeId": "1", "connectorId": "11" },
+        "target": { "nodeId": "output", "connectorId": "2" }
+      },
+      {
+        "source": { "nodeId": "1", "connectorId": "12" },
+        "target": { "nodeId": "output", "connectorId": "3" }
+      },
+      {
+        "source": { "nodeId": "3", "connectorId": "0" },
+        "target": { "nodeId": "output", "connectorId": "4" }
+      }
+    ]
+  },
   "NandGame:Levels:LATCH": {
     "nodes": [
-      { "type": "SELECT", "x": 129.79998779296875, "y": 611, "id": "0" }
+      { "type": "SELECT", "x": 173.79998779296875, "y": 524, "id": "0" }
     ],
     "connections": [
       {
@@ -773,25 +1512,48 @@
   },
   "NandGame:Levels:DFF": {
     "nodes": [
-      { "type": "AND", "x": 81.79998779296875, "y": 632, "id": "0" },
-      { "type": "LATCH", "x": 154.79998779296875, "y": 509, "id": "1" }
+      { "type": "LATCH", "x": 204.79998779296875, "y": 476, "id": "0" },
+      { "type": "LATCH", "x": 385.79998779296875, "y": 308, "id": "1" },
+      { "type": "INV", "x": 90.79998779296875, "y": 680, "id": "2" },
+      { "type": "AND", "x": 17.800018310546875, "y": 577, "id": "3" },
+      { "type": "AND", "x": 587.7999877929688, "y": 574, "id": "4" }
     ],
     "connections": [
       {
-        "source": { "nodeId": "input", "connectorId": "0" },
+        "source": { "nodeId": "3", "connectorId": "0" },
         "target": { "nodeId": "0", "connectorId": "0" }
       },
       {
-        "source": { "nodeId": "input", "connectorId": "2" },
+        "source": { "nodeId": "input", "connectorId": "1" },
         "target": { "nodeId": "0", "connectorId": "1" }
       },
       {
-        "source": { "nodeId": "0", "connectorId": "0" },
+        "source": { "nodeId": "4", "connectorId": "0" },
         "target": { "nodeId": "1", "connectorId": "0" }
       },
       {
-        "source": { "nodeId": "input", "connectorId": "1" },
+        "source": { "nodeId": "0", "connectorId": "0" },
         "target": { "nodeId": "1", "connectorId": "1" }
+      },
+      {
+        "source": { "nodeId": "input", "connectorId": "2" },
+        "target": { "nodeId": "2", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "input", "connectorId": "0" },
+        "target": { "nodeId": "3", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "2", "connectorId": "0" },
+        "target": { "nodeId": "3", "connectorId": "1" }
+      },
+      {
+        "source": { "nodeId": "input", "connectorId": "0" },
+        "target": { "nodeId": "4", "connectorId": "0" }
+      },
+      {
+        "source": { "nodeId": "input", "connectorId": "2" },
+        "target": { "nodeId": "4", "connectorId": "1" }
       },
       {
         "source": { "nodeId": "1", "connectorId": "0" },
