@@ -53,11 +53,11 @@ Im Folgenden machen wir uns daran, einen Addierer zu bauen. Damit Sie die Übers
 
 ## 1. Aus Transistoren bauen wir Logikbausteine
 
-Wir verwenden das [Nand-Game](https://nandgame.com/) um folgende Logikgates zu bauen.
+Wir verwenden das [Nand-Game](https://nandgame.com/) um folgende Logikgates zu bauen. Dieser Teil wird [in diesem Video](https://kswe-my.sharepoint.com/:v:/g/personal/cha_kswe_ch/EbHUTNcJsntBnlMyQgKc-mABkhzEVL-gBPmd_baop__Eqw?e=Zu0OBg&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) erklärt.
 
 
 ![[Drawing 2024-04-29 07.05.53.excalidraw]]
 
 ## 2. Aus Logikbausteinen bauen wir den Rechner
 
-<div style="max-width: 1280px"><div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"><iframe src="https://kswe-my.sharepoint.com/personal/cha_kswe_ch/_layouts/15/embed.aspx?UniqueId=4030cc7c-a24e-4ace-9528-4f13280db672&embed=%7B%22hvm%22%3Atrue%2C%22ust%22%3Atrue%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="1280" height="720" frameborder="0" scrolling="no" allowfullscreen title="aufbau-01-p2-addierer-korr.mp4" style="border:none; position: absolute; top: 0; left: 0; right: 0; bottom: 0; height: 100%; max-width: 100%;"></iframe></div></div>
+Dieser Teil wird [in diesem Video](https://kswe-my.sharepoint.com/:v:/g/personal/cha_kswe_ch/EXzMMEBOos5KlShPEygNtnIBKK5X_iYTH_lDxmyQ8VwMJQ?e=810XJS&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) erklärt.
