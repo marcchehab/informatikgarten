@@ -4,7 +4,7 @@ title: "01: Wie ein Prozessor rechnet"
 > [!success] Lernziele
 > 
 > - Sie wissen, was die Logikgates NAND, AND, OR, XOR tun.
-> - Sie können aus Logikgates einen Addierer bauen.
+> - Sie können aus Logikgates einen Halbaddierer und einen Addierer bauen.
 
 Ihr Computer ist eine Rechenmaschine, die auf purer Logik aufgebaut ist. Es gibt keine Magie, kein "Geist" in der Maschine - alles ist von Grund auf nachvollziehbar. In dieser Lektion bauen wir einen Rechner, der zwei binäre Zahlen addieren kann.
 
@@ -60,7 +60,4 @@ Wir verwenden das [Nand-Game](https://nandgame.com/) um folgende Logikgates zu b
 
 ## 2. Aus Logikbausteinen bauen wir den Rechner
 
-### Halbaddierer
-
-### Addierer
-
+<div style="max-width: 1280px"><div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"><iframe src="https://kswe-my.sharepoint.com/personal/cha_kswe_ch/_layouts/15/embed.aspx?UniqueId=4030cc7c-a24e-4ace-9528-4f13280db672&embed=%7B%22hvm%22%3Atrue%2C%22ust%22%3Atrue%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="1280" height="720" frameborder="0" scrolling="no" allowfullscreen title="aufbau-01-p2-addierer-korr.mp4" style="border:none; position: absolute; top: 0; left: 0; right: 0; bottom: 0; height: 100%; max-width: 100%;"></iframe></div></div>
