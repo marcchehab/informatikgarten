@@ -61,6 +61,8 @@ Wir verwenden das [Nand-Game](https://nandgame.com/) um folgende Logikgates zu b
 ## 2. Aus Logikbausteinen bauen wir den Rechner
 
 ### Halbaddierer
+![[Pasted image 20240506070736.png]]
 
 ### Addierer
 
+![[Pasted image 20240506070804.png]]
