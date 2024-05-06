@@ -4,7 +4,7 @@ title: "01: Wie ein Prozessor rechnet"
 > [!success] Lernziele
 > 
 > - Sie wissen, was die Logikgates NAND, AND, OR, XOR tun.
-> - Sie können aus Logikgates einen Addierer bauen.
+> - Sie können aus Logikgates einen Halbaddierer und einen Addierer bauen.
 
 Ihr Computer ist eine Rechenmaschine, die auf purer Logik aufgebaut ist. Es gibt keine Magie, kein "Geist" in der Maschine - alles ist von Grund auf nachvollziehbar. In dieser Lektion bauen wir einen Rechner, der zwei binäre Zahlen addieren kann.
 
@@ -53,13 +53,14 @@ Im Folgenden machen wir uns daran, einen Addierer zu bauen. Damit Sie die Übers
 
 ## 1. Aus Transistoren bauen wir Logikbausteine
 
-Wir verwenden das [Nand-Game](https://nandgame.com/) um folgende Logikgates zu bauen.
+Wir verwenden das [Nand-Game](https://nandgame.com/) um folgende Logikgates zu bauen. Dieser Teil wird [in diesem Video](https://kswe-my.sharepoint.com/:v:/g/personal/cha_kswe_ch/EbHUTNcJsntBnlMyQgKc-mABkhzEVL-gBPmd_baop__Eqw?e=Zu0OBg&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) erklärt.
 
 
 ![[Drawing 2024-04-29 07.05.53.excalidraw]]
 
 ## 2. Aus Logikbausteinen bauen wir den Rechner
 
+Dieser Teil wird [in diesem Video](https://kswe-my.sharepoint.com/:v:/g/personal/cha_kswe_ch/EXzMMEBOos5KlShPEygNtnIBKK5X_iYTH_lDxmyQ8VwMJQ?e=810XJS&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) erklärt.
 ### Halbaddierer
 ![[Pasted image 20240506070736.png]]
 
