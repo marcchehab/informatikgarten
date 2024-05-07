@@ -35,11 +35,7 @@ Program counter (PC) ^PWYj6Rt7
 
 Akkumulator ^CaRnw99o
 
-R1 ^zl8Um4NI
-
-R2 ^sQG3wZz7
-
-R3 ^NXTeNocf
+Aktuelle Zeile ^zl8Um4NI
 
 Memory (RAM) ^3q1ObShG
 
@@ -88,6 +84,8 @@ Chipset ^5ZlYT8ON
 USB ^fGEvJBfk
 
 SSD (SATA) ^xcbjPZZs
+
+... ^iqGFoYDy
 
 %%
 # Drawing
@@ -959,8 +957,8 @@ SSD (SATA) ^xcbjPZZs
 		},
 		{
 			"type": "rectangle",
-			"version": 641,
-			"versionNonce": 1362009994,
+			"version": 697,
+			"versionNonce": 517950879,
 			"isDeleted": false,
 			"id": "gxoP4UoWppodrcqgoDp-5",
 			"fillStyle": "solid",
@@ -973,7 +971,7 @@ SSD (SATA) ^xcbjPZZs
 			"y": 97.4591348955679,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#ffec99",
-			"width": 63.545548200024704,
+			"width": 152.43443708891363,
 			"height": 59.55212462649246,
 			"seed": 306496406,
 			"groupIds": [],
@@ -987,14 +985,14 @@ SSD (SATA) ^xcbjPZZs
 					"id": "zl8Um4NI"
 				}
 			],
-			"updated": 1714459463417,
+			"updated": 1715076818187,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 329,
-			"versionNonce": 372536854,
+			"version": 411,
+			"versionNonce": 57842577,
 			"isDeleted": false,
 			"id": "zl8Um4NI",
 			"fillStyle": "solid",
@@ -1003,168 +1001,28 @@ SSD (SATA) ^xcbjPZZs
 			"roughness": 0,
 			"opacity": 100,
 			"angle": 0,
-			"x": 304.28521860115364,
+			"x": 301.48356929559816,
 			"y": 115.73519720881413,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#ffec99",
-			"width": 25.56640625,
+			"width": 120.05859375,
 			"height": 23,
 			"seed": 1934876886,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1714459463417,
+			"updated": 1715076834804,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
 			"fontFamily": 2,
-			"text": "R1",
-			"rawText": "R1",
+			"text": "Aktuelle Zeile",
+			"rawText": "Aktuelle Zeile",
 			"textAlign": "center",
 			"verticalAlign": "middle",
 			"containerId": "gxoP4UoWppodrcqgoDp-5",
-			"originalText": "R1",
-			"lineHeight": 1.15
-		},
-		{
-			"type": "rectangle",
-			"version": 645,
-			"versionNonce": 1845894730,
-			"isDeleted": false,
-			"id": "6u4HLDhpyXqciYNvga4SH",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 0,
-			"opacity": 100,
-			"angle": 0,
-			"x": 356.5473705036504,
-			"y": 97.4591348955679,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "#ffec99",
-			"width": 63.545548200024704,
-			"height": 59.55212462649246,
-			"seed": 1546720470,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": {
-				"type": 3
-			},
-			"boundElements": [
-				{
-					"type": "text",
-					"id": "sQG3wZz7"
-				}
-			],
-			"updated": 1714459463417,
-			"link": null,
-			"locked": false
-		},
-		{
-			"type": "text",
-			"version": 335,
-			"versionNonce": 1940472662,
-			"isDeleted": false,
-			"id": "sQG3wZz7",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 0,
-			"opacity": 100,
-			"angle": 0,
-			"x": 375.53694147866275,
-			"y": 115.73519720881413,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "#ffec99",
-			"width": 25.56640625,
-			"height": 23,
-			"seed": 1982073366,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1714459463417,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 2,
-			"text": "R2",
-			"rawText": "R2",
-			"textAlign": "center",
-			"verticalAlign": "middle",
-			"containerId": "6u4HLDhpyXqciYNvga4SH",
-			"originalText": "R2",
-			"lineHeight": 1.15
-		},
-		{
-			"type": "rectangle",
-			"version": 649,
-			"versionNonce": 1761592586,
-			"isDeleted": false,
-			"id": "JeroWsVIIE_XsbtFtWt4a",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 0,
-			"opacity": 100,
-			"angle": 0,
-			"x": 427.79909338115954,
-			"y": 97.4591348955679,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "#ffec99",
-			"width": 63.545548200024704,
-			"height": 59.55212462649246,
-			"seed": 1031321226,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": {
-				"type": 3
-			},
-			"boundElements": [
-				{
-					"type": "text",
-					"id": "NXTeNocf"
-				}
-			],
-			"updated": 1714459463417,
-			"link": null,
-			"locked": false
-		},
-		{
-			"type": "text",
-			"version": 339,
-			"versionNonce": 2073192598,
-			"isDeleted": false,
-			"id": "NXTeNocf",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 0,
-			"opacity": 100,
-			"angle": 0,
-			"x": 446.78866435617186,
-			"y": 115.73519720881413,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "#ffec99",
-			"width": 25.56640625,
-			"height": 23,
-			"seed": 385176906,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1714459463417,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 2,
-			"text": "R3",
-			"rawText": "R3",
-			"textAlign": "center",
-			"verticalAlign": "middle",
-			"containerId": "JeroWsVIIE_XsbtFtWt4a",
-			"originalText": "R3",
+			"originalText": "Aktuelle Zeile",
 			"lineHeight": 1.15
 		},
 		{
@@ -2048,6 +1906,42 @@ SSD (SATA) ^xcbjPZZs
 			"updated": 1714459486592,
 			"link": null,
 			"locked": false
+		},
+		{
+			"id": "iqGFoYDy",
+			"type": "text",
+			"x": 478.7568054981892,
+			"y": 116.56784895800345,
+			"width": 16.669921875,
+			"height": 23,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "#ffec99",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 0,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 2059407295,
+			"version": 29,
+			"versionNonce": 324178929,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1715076812971,
+			"link": null,
+			"locked": false,
+			"text": "...",
+			"rawText": "...",
+			"fontSize": 20,
+			"fontFamily": 2,
+			"textAlign": "center",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "...",
+			"lineHeight": 1.15
 		}
 	],
 	"appState": {
@@ -2065,10 +1959,10 @@ SSD (SATA) ^xcbjPZZs
 		"currentItemTextAlign": "center",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 72.83568163309383,
-		"scrollY": 706.8714519547259,
+		"scrollX": 112.35949115690335,
+		"scrollY": 348.421690024129,
 		"zoom": {
-			"value": 0.7000000000000001
+			"value": 1.35
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,
