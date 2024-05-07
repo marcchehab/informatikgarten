@@ -65,3 +65,4 @@ Dieser Teil wird [in diesem Video](https://kswe-my.sharepoint.com/:v:/g/personal
 #### Addierer
 
 ![[Pasted image 20240506070804.png]]
+

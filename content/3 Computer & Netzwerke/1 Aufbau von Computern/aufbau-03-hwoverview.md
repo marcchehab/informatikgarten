@@ -7,7 +7,7 @@ title: "03: Übersicht der Hardware"
 
 **1 Mainboard mit Chipset**
 - Kernfunktion: Die Platine verbindet die verschiedenen Hardware-Komponenten. 
-	- Kernkomponenten wie RAM und Grafikkarte (je nach Prozessor und Chipset noch mehr!) können direkt mit der CPU kommunizieren.
+	- Kernkomponenten wie RAM und Grafikkarte (je nach Prozessor und Chipset noch mehr!) können direkt per Systembus mit der CPU kommunizieren.
 	- Weitere Komponenten - z.B. USB-Ports, Netzwerkkarten, Festplatten - sind über einen Verteiler-Chip auf dem Mainboard angeschlossen, dem sogenannten **Chipset**
 - Hauptgrösse: Art und Anzahl der Steckplätze (für CPU, RAM, PCIe, USB, etc.) und Chipset bestimmen Geschwindigkeit
 - Wichtige Marken: ASUS, MSI, Gigabyte
