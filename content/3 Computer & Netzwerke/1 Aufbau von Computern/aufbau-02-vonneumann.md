@@ -5,27 +5,18 @@ title: "02: Von Neumann Architektur"
 
 ![[aufbau-02-vonneumann 2024-04-30 08.08.56.excalidraw]]
 
-Ich habe Ihnen im violetten Teil eine moderne Input- und Output-Infrastruktur angehängt. In dieser Lektion ist aber nur der obere Teil wichtig: die klassische Von-Neumann-Architektur.
+Ich habe Ihnen im violetten Teil eine moderne Input- und Output-Infrastruktur angehängt. In dieser Lektion ist aber nur der obere Teil wichtig: die klassische **Von-Neumann-Architektur**.
 
-Die Kernprinzipien des Ablaufs sind folgende:
-- Die Control Unit (CU) steuert folgenden Ablauf: Anweisungen werden **nacheinander über einen Bus aus dem Speicher geholt (fetch), dekodiert (decode) und ausgeführt (execute)**.
+Konzentrieren wir uns zuerst auf den Ablauf:
+- Die Control Unit (CU) steuert den Prozess: Anweisungen werden **nacheinander über einen Bus aus dem Speicher geholt (fetch), dekodiert (decode) und ausgeführt (execute)**.
 - Daten und Befehle werden **beide zusammen** und **binär** im selben Speicher (RAM) gespeichert
 - Der Zyklus setzt sich automatisch fort bis zu einer **Stopp-Anweisung**
 
 Um das zu bewerkstelligen, definiert die Von-Neumann-Architektur **vier Hauptteilen**:
-1. **Control Unit, CU**: Das Steuerwerk koordiniert die Aktivitäten des Computers. Es holt Befehle aus dem Speicher, entschlüsselt sie und gibt dann die Befehle an die ALU und andere Teile des Systems weiter, um sie auszuführen.
-2. **Arithmetisch-logische Einheit (ALU)**: Sie führt alle Rechen- und Logikoperationen aus. 
-3. **Speicher (RAM)**: Speichert Daten und Befehle. In der Von-Neumann-Architektur gibt es keinen Unterschied zwischen Daten- und Befehlsspeicher, was bedeutet, dass Programme und die von ihnen verarbeiteten Daten im selben Speicherbereich liegen.
-4. **Input/Output (I/O)**: Verbindet das Herz des Computers mit anderen Geräten, indem es Interaktionen mit Eingabe- und Ausgabegeräten wie Tastaturen, Mäusen und Bildschirmen ermöglicht.
-
-### Zusammenhang zwischen der ALU und der Von-Neumann-Architektur
-
-Die ALU ist ein zentraler Bestandteil der Von-Neumann-Architektur. Alle arithmetischen und logischen Berechnungen, die für die Ausführung von Programmen notwendig sind, werden in der ALU durchgeführt. Der Addierer in der ALU ist dabei das Basismodul für arithmetische Berechnungen. Die Fähigkeit der ALU, komplexe Berechnungen durchzuführen, ermöglicht es dem Computer, vielfältige Aufgaben effizient zu bearbeiten.
-
-Die Integration der ALU in diese Architektur stellt sicher, dass der Computer in der Lage ist, eine breite Palette von Instruktionen zu verarbeiten, was für die Flexibilität und Leistungsfähigkeit moderner Computer essentiell ist. Somit ist der Addierer, als elementarer Bestandteil der ALU, fundamental für die gesamte Computerarchitektur nach Von Neumann.
-
-Durch den Verständnis des Addierers und seiner Funktion innerhalb der ALU kannst du besser nachvollziehen, wie grundlegende mathematische Operationen von Computern durchgeführt werden und wie diese Operationen in grösseren Berechnungen und Prozessen integriert sind.
-
+1. **Control Unit, CU**: Koordiniert den Ablauf, wie oben beschrieben.
+2. **Arithmetisch-logische Einheit (ALU)**: Führt alle Rechen- und Logikoperationen aus. Hier befindet sich der Addierer, den wir [[aufbau-01-addierer|in der Lektion dazu]] bauen.
+3. **Arbeitsspeicher (RAM)**: Speichert Daten **und** Befehle. 
+4. **Input/Output (I/O)**: Verbindet diesen Kern des Computers mit anderen Geräten wie Massenspeicher (SSD, Festplatten), Grafikkarten, USB-Geräte und Peripheriegeräte.
 
 ## Simulator
 https://oinf.ch/interactive/little-man-computer/
