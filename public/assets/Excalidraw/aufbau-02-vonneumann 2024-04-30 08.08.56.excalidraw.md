@@ -133,8 +133,8 @@ Inputs / Outputs ^LFKcB9WM
 		},
 		{
 			"type": "rectangle",
-			"version": 703,
-			"versionNonce": 1484856667,
+			"version": 707,
+			"versionNonce": 1691996763,
 			"isDeleted": false,
 			"id": "0FL6XMv0xl7CjkQba--mO",
 			"fillStyle": "solid",
@@ -146,7 +146,7 @@ Inputs / Outputs ^LFKcB9WM
 			"x": -32.67611599999998,
 			"y": 219.12968579945826,
 			"strokeColor": "transparent",
-			"backgroundColor": "#e397f255",
+			"backgroundColor": "#e396f255",
 			"width": 1076.429798064284,
 			"height": 243.42550660346348,
 			"seed": 1630988795,
@@ -156,7 +156,7 @@ Inputs / Outputs ^LFKcB9WM
 				"type": 3
 			},
 			"boundElements": [],
-			"updated": 1715148552931,
+			"updated": 1715148770669,
 			"link": null,
 			"locked": false
 		},
@@ -2198,7 +2198,7 @@ Inputs / Outputs ^LFKcB9WM
 		"theme": "dark",
 		"viewBackgroundColor": "#ffffff",
 		"currentItemStrokeColor": "transparent",
-		"currentItemBackgroundColor": "#e397f255",
+		"currentItemBackgroundColor": "#e396f255",
 		"currentItemFillStyle": "solid",
 		"currentItemStrokeWidth": 2,
 		"currentItemStrokeStyle": "dotted",
