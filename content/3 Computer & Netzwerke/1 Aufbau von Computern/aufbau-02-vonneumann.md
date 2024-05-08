@@ -3,6 +3,10 @@ title: "02: Von Neumann Architektur"
 ---
 1945 wurden in den USA und Europa an verschiedenen Universitäten Rechenmaschinen gebaut. Das Mathegenie John von Neumann fasste seine Arbeit am EDVAC-Computer in einem Bericht zusammen, in dem er die Kernprinzipien und die Organisation der Komponenten erklärte und beschrieb. Diese Grundprinzipien sind bis heute die Basis der meisten Allzweckcomputer.
 
+Diese Übersicht fügt moderne 
+
+![[aufbau-02-vonneumann 2024-04-30 08.08.56.excalidraw]]
+
 - Daten und Befehle werden beide binär im Primärspeicher gespeichert
 - Anweisungen werden nacheinander und in Reihenfolge (seriell) aus dem Speicher geholt
 - Der Prozessor dekodiert und führt einen Befehl nach dem anderen aus
@@ -14,10 +18,6 @@ Die "Von-Neumann-Architektur" besteht im Wesentlichen aus **vier Hauptteilen**:
 2. **Arithmetisch-logische Einheit (ALU)**: Sie führt alle Rechen- und Logikoperationen aus. 
 3. **Speicher (Memory)**: Speichert Daten und Befehle. In der Von-Neumann-Architektur gibt es keinen Unterschied zwischen Daten- und Befehlsspeicher, was bedeutet, dass Programme und die von ihnen verarbeiteten Daten im selben Speicherbereich liegen.
 4. **Ein-/Ausgabe (I/O)**: Verbindet den Computer mit der Aussenwelt, indem es Interaktionen mit Eingabe- und Ausgabegeräten wie Tastaturen, Mäusen und Bildschirmen ermöglicht.
-
-
-
-![[aufbau-02-vonneumann 2024-04-30 08.08.56.excalidraw]]
 
 ### Zusammenhang zwischen der ALU und der Von-Neumann-Architektur
 
