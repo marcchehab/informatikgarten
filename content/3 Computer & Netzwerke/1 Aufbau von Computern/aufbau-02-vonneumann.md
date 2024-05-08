@@ -1,23 +1,22 @@
 ---
 title: "02: Von Neumann Architektur"
 ---
-1945 wurden in den USA und Europa an verschiedenen Universitäten Rechenmaschinen gebaut. Das Mathegenie John von Neumann fasste seine Arbeit am EDVAC-Computer in einem Bericht zusammen, in dem er die Kernprinzipien und die Organisation der Komponenten erklärte und beschrieb. Diese Grundprinzipien sind bis heute die Basis der meisten Allzweckcomputer.
-
-Diese Übersicht fügt moderne 
+1945 wurden in den USA und Europa an verschiedenen Universitäten Rechenmaschinen gebaut. Das Mathegenie John von Neumann fasste seine Arbeit am EDVAC-Computer in einem Bericht zusammen, in dem er die Kernprinzipien und die Organisation der Komponenten erklärte und beschrieb. Diese Grundprinzipien sind bis heute **die Basis der meisten Allzweckcomputer**.
 
 ![[aufbau-02-vonneumann 2024-04-30 08.08.56.excalidraw]]
 
-- Daten und Befehle werden beide binär im Primärspeicher gespeichert
-- Anweisungen werden nacheinander und in Reihenfolge (seriell) aus dem Speicher geholt
-- Der Prozessor dekodiert und führt einen Befehl nach dem anderen aus
-- Der Zyklus setzt sich fort, bis keine weiteren Anweisungen mehr verfügbar sind
+Ich habe Ihnen im violetten Teil eine moderne Input- und Output-Infrastruktur angehängt. In dieser Lektion ist aber nur der obere Teil wichtig: die klassische Von-Neumann-Architektur.
 
-Die "Von-Neumann-Architektur" besteht im Wesentlichen aus **vier Hauptteilen**:
+Die Kernprinzipien des Ablaufs sind folgende:
+- Die Control Unit (CU) steuert folgenden Ablauf: Anweisungen werden **nacheinander über einen Bus aus dem Speicher geholt (fetch), dekodiert (decode) und ausgeführt (execute)**.
+- Daten und Befehle werden **beide zusammen** und **binär** im selben Speicher (RAM) gespeichert
+- Der Zyklus setzt sich automatisch fort bis zu einer **Stopp-Anweisung**
 
-1. **Steuerwerk (Control Unit, CU)**: Das Steuerwerk koordiniert die Aktivitäten des Computers. Es holt Befehle aus dem Speicher, entschlüsselt sie und gibt dann die Befehle an die ALU und andere Teile des Systems weiter, um sie auszuführen.
+Um das zu bewerkstelligen, definiert die Von-Neumann-Architektur **vier Hauptteilen**:
+1. **Control Unit, CU**: Das Steuerwerk koordiniert die Aktivitäten des Computers. Es holt Befehle aus dem Speicher, entschlüsselt sie und gibt dann die Befehle an die ALU und andere Teile des Systems weiter, um sie auszuführen.
 2. **Arithmetisch-logische Einheit (ALU)**: Sie führt alle Rechen- und Logikoperationen aus. 
-3. **Speicher (Memory)**: Speichert Daten und Befehle. In der Von-Neumann-Architektur gibt es keinen Unterschied zwischen Daten- und Befehlsspeicher, was bedeutet, dass Programme und die von ihnen verarbeiteten Daten im selben Speicherbereich liegen.
-4. **Ein-/Ausgabe (I/O)**: Verbindet den Computer mit der Aussenwelt, indem es Interaktionen mit Eingabe- und Ausgabegeräten wie Tastaturen, Mäusen und Bildschirmen ermöglicht.
+3. **Speicher (RAM)**: Speichert Daten und Befehle. In der Von-Neumann-Architektur gibt es keinen Unterschied zwischen Daten- und Befehlsspeicher, was bedeutet, dass Programme und die von ihnen verarbeiteten Daten im selben Speicherbereich liegen.
+4. **Input/Output (I/O)**: Verbindet das Herz des Computers mit anderen Geräten, indem es Interaktionen mit Eingabe- und Ausgabegeräten wie Tastaturen, Mäusen und Bildschirmen ermöglicht.
 
 ### Zusammenhang zwischen der ALU und der Von-Neumann-Architektur
 
