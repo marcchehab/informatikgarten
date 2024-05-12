@@ -1,6 +1,13 @@
 ---
 title: "02: Von Neumann Architektur"
 ---
+
+> [!success] Lernziele
+> 
+> - Sie wissen, was folgende Teile der Von-Neumann-Architektur sind: CPU, CU, ALU, Register, RAM, Bus
+> - Sie wissen, was der Fetch-Decode-Execute-Zyklus bezweckt.
+> - Sie können ein einfaches Programm mit Schleife in einem LMC verstehen oder schreiben.
+
 1945 wurden in den USA und Europa an verschiedenen Universitäten Rechenmaschinen gebaut. Das Mathegenie John von Neumann fasste seine Arbeit am EDVAC-Computer in einem Bericht zusammen, in dem er die Kernprinzipien und die Organisation der Komponenten erklärte und beschrieb. Diese Grundprinzipien sind bis heute **die Basis der meisten Allzweckcomputer**.
 
 ![[aufbau-02-vonneumann 2024-04-30 08.08.56.excalidraw]]
@@ -18,7 +25,7 @@ Um das zu bewerkstelligen, definiert die Von-Neumann-Architektur **vier Haupttei
 3. **Arbeitsspeicher (RAM)**: Speichert Daten **und** Befehle. 
 4. **Input/Output (I/O)**: Verbindet diesen Kern des Computers mit anderen Geräten wie Massenspeicher (SSD, Festplatten), Grafikkarten, USB-Geräte und Peripheriegeräte.
 
-## Simulator
+## LMC-Simulator
 https://oinf.ch/interactive/little-man-computer/
 
 1. Führen Sie das Beispielprogramm mehrfach aus und versuchen Sie es mit der Befehlsliste nachzuvollziehen.
@@ -26,14 +33,15 @@ https://oinf.ch/interactive/little-man-computer/
 2. Schreiben Sie dann entsprechende Programme für die nachfolgenden Aufgaben.
 
 ### Aufgaben
-1. Entwickeln Sie ein Programm, das die zwei Inputwerte subtrahiert, dann das Ergebnis ausgibt und stoppt. 
-2. Entwickeln Sie ein Programm, das die zwei Inputwerte multipliziert, dann das Ergebnis ausgibt und stoppt. 
-3. Entwickeln Sie ein Programm, das die zwei Inputwerte vergleicht, dann das Ergebnis (1 für gleich, 0 für ungleich) ausgibt und stoppt. 
-4. Entwickeln Sie ein Programm, das die zwei subtrahiert, wenn sie nicht gleich sind, ansonsten addiert, dann das Ergebnis ausgibt und stoppt. 
-5. Entwickeln Sie ein Programm, das (in Zweierschritten) vom ersten Input bis zum zweiten zählt (jeweils ausgeben) und dann stoppt. 
-6. Entwickeln Sie ein Programm, das alle ganzen Zahlen von 0 bis 100 zusammenzählt, dann das Ergebnis ausgibt und stoppt.
+1. **Substrahieren** Sie zwei Inputwerte und geben Sie das Ergebnis aus
+2. Addieren Sie einen Inputwert **unendlich lange zu sich selbst**, e.g. (Input 3 => 3, 6, 9, 12,...)
+3. Entwickeln Sie ein Programm, das zwei Inputwerte **multipliziert**, dann das Ergebnis ausgibt und stoppt. 
+4. Entwickeln Sie ein Programm, das die zwei Inputwerte vergleicht, dann das Ergebnis (1 für gleich, 0 für ungleich) ausgibt und stoppt. 
+5. Entwickeln Sie ein Programm, das die zwei subtrahiert, wenn sie nicht gleich sind, ansonsten addiert, dann das Ergebnis ausgibt und stoppt. 
+6. Entwickeln Sie ein Programm, das (in Zweierschritten) vom ersten Input bis zum zweiten zählt (jeweils ausgeben) und dann stoppt. 
+7. Entwickeln Sie ein Programm, das alle ganzen Zahlen von 0 bis 100 zusammenzählt, dann das Ergebnis ausgibt und stoppt.
 
-## Programmiersprachen
+## Zusatzinfo: Programmiersprachen von Bits zu Python
 
 Der Little Man Computer (LMC) ist ein idealisiertes Modell eines Computers, das zum Lernen der grundlegenden Mechanismen der Computerprogrammierung genutzt wird. Hier ist eine kurze Erklärung, wie Binärcode zu Assembler und weiter zu höheren Programmiersprachen verarbeitet wird:
 

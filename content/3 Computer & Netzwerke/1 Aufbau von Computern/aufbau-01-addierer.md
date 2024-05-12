@@ -3,8 +3,9 @@ title: "01: Wie ein Prozessor rechnet"
 ---
 > [!success] Lernziele
 > 
-> - Sie wissen, was die Logikgates NAND, AND, OR, XOR tun.
-> - Sie können aus Logikgates einen Halbaddierer und einen Addierer bauen.
+> - Sie wissen, was die Logikgates NAND, AND, OR, XOR tun und können ihre Wahrheitstabellen sowie ihre Symbole in einer Schaltung identifizieren.
+> - Sie können aus einfachen logischen Schaltungen eine Wahrheitstabelle ableiten.
+> - Sie können eine logische Schaltung für einen Halbaddierer und einen Addierer zeichnen.
 
 Ihr Computer ist eine Rechenmaschine, die auf purer Logik aufgebaut ist. Es gibt keine Magie, kein "Geist" in der Maschine - alles ist von Grund auf nachvollziehbar. In dieser Lektion bauen wir einen Rechner, der zwei binäre Zahlen addieren kann.
 

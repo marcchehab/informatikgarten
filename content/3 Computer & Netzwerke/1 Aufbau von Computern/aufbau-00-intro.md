@@ -5,7 +5,7 @@ title: "00: Denkhilfe & Übersicht"
 > 
 > - Sie können den Unterschied zwischen **Abstraktion** und **Implementierung** eines Moduls beschreiben.
 > - Sie können Benutzer, Anwendungsprogramme, Betriebssystem und Hardware nach "Abstraktheit" sortieren und wissen, was mit "Abstraktheit" in diesem Kontext gemeint ist.
-> - Sie kennen die Grundfunktion eines Betriebssystems.
+> - Sie können erklären, wieso es ein Betriebssystem als Schnittstelle zwischen Hardware und Anwenderprogrammen braucht.
 ## Abstraktion und Implementation von Modulen unterscheiden
 
 > Sie fragen sich vielleicht, wie es möglich ist, ein komplettes Computersystem von Grund auf zu konstruieren, das mit nichts anderem als elementarsten Schaltkreisen beginnt. Das muss ein gigantisches Unterfangen sein! Wir gehen mit dieser Komplexität um, indem wir **das System in Module aufteilen**. Jedes Modul wird ... separat in einem eigenständigen Projekt aufgebaut. Sie werden sich vielleicht fragen, wie es möglich ist, diese Module isoliert zu beschreiben und zu bauen? Sie sind doch sicher miteinander verbunden! Wie wir ... zeigen werden, impliziert ein gutes modulares Design genau das: Sie können an den einzelnen Modulen unabhängig voneinander arbeiten, während Sie den Rest des Systems völlig ignorieren. Wenn das System gut konzipiert ist, können Sie diese Module in beliebiger Reihenfolge und sogar parallel zueinander aufbauen, wenn Sie im Team arbeiten.
