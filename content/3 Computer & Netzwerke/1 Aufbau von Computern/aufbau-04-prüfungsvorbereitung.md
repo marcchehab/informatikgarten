@@ -5,22 +5,22 @@ Hier die zusammengetragenen Lernziele der Lektionen:
 
 > [!success] Lernziele für die Prüfung über Computersysteme
 >
-> ### [Intro](aufbau-00-intro)
+> #### [Intro](aufbau-00-intro)
 > - Sie können den Unterschied zwischen **Abstraktion** und **Implementierung** eines Moduls beschreiben.
 > - Sie können Benutzer, Anwendungsprogramme, **Betriebssystem** und Hardware nach "Abstraktheit" sortieren und wissen, was mit "Abstraktheit" in diesem Kontext gemeint ist.
 > - Sie können erklären, wieso es ein Betriebssystem als **Schnittstelle zwischen Hardware und Anwenderprogrammen** braucht.
 > 
->  ### [Logikgates & Addierer](aufbau-01-addierer) 
+>  #### [Logikgates & Addierer](aufbau-01-addierer) 
 >  - Sie wissen, was die **Logikgates** NAND, AND, OR, XOR tun und kennen ihre **Wahrheitstabellen** und **Symbole**.
 > - Sie können aus einfachen logischen **Schaltungen** eine **Wahrheitstabelle ableiten**.
 > - Sie können eine logische Schaltung für einen Halbaddierer und einen Addierer mit den korrekten Symbolen zeichnen und nachvollziehen.
 > 
-> ### [Von-Neumann-Architektur](aufbau-02-vonneumann)
+> #### [Von-Neumann-Architektur](aufbau-02-vonneumann)
 > - Sie wissen, was die Schritte des **Fetch-Decode-Execute-Zyklus** tun.
 >  - Sie wissen, was folgende Teile der Von-Neumann-Architektur sind: **CPU, CU, ALU, Register (PC und ACC), RAM, Bus**
 > - Sie können ein [einfaches Programm wie Bsp 1 im **LMC**](https://oinf.ch/interactive/little-man-computer/) verstehen oder schreiben.
 > 
-> ### [Hardwarekomponenten](aufbau-03-hwoverview) (falls besprochen)
+> #### [Hardwarekomponenten](aufbau-03-hwoverview) (falls besprochen)
 > - Sie können die sechs besprochenen Komponenten in einem Desktopcomputer identifizieren
 > - Sie können von den Komponenten die Kernfunktion und Kenngrösse sinngemäss zusammenfassen
  
@@ -52,7 +52,7 @@ Füllen Sie ein: In der Informatik teilen wir Dinge gern in Module auf, um Ordnu
 > 
 > Wenn wir ein Modul verwenden, können wir uns nämlich ausschliesslich auf die **Abstraktion/Schnittstelle** des Moduls konzentrieren und die Details der **Implementierung/Funktionsweise** komplett  ignorieren.
 
-## Testaufgaben zu [Logikgates & Addierern](aufbau-01-addierer)
+### Testaufgaben zu [Logikgates & Addierern](aufbau-01-addierer)
 
 Ein OR-Gate habe zwei Inputs "A" und "B" sowie einen Output "out". Schreiben Sie die Wahrheitstabelle auf.
 
@@ -137,7 +137,7 @@ Na toll... Meine Katze hat wieder mit meinem Addierer gespielt und alle Verbindu
 > 
 > ![[aufbau-04-prüfungsvorbereitung 2024-05-15 15.57.33.excalidraw]]
 
-## Testaufgaben zur [Von-Neumann-Architektur](aufbau-02-vonneumann)
+### Testaufgaben zur [Von-Neumann-Architektur](aufbau-02-vonneumann)
 
 Benennen Sie folgende sechs Teile der Von-Neumann-Architektur.
 ![[aufbau-04-prüfungsvorbereitung 2024-05-15 16.10.32.excalidraw]]
