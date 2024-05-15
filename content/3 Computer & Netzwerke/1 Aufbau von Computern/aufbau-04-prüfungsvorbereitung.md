@@ -28,10 +28,10 @@ Hier die zusammengetragenen Lernziele der Lektionen:
 
 ### Testaufgaben zu [Intro](aufbau-00-intro)
 
-Sie schreiben ein Programm mit einer grafischen Oberfläche für viele Computer. Beantworten Sie mit wahr oder falsch, welche Information über die Computer Sie dazu brauchen.
-- Was für ein Prozessor
-- Vorhandener Speicherplatz
-- Betriebssystem
+Sie schreiben ein Programm, das Sie auf vielen Computern installieren möchten. Beantworten Sie mit wahr oder falsch: **Welche Information über die Computer brauchen Sie?**
+- Was für einen Prozessor sie benutzen
+- Der vorhandene Speicherplatz
+- Das Betriebssystem
 
 > [!solution]- Lösung
 > 
