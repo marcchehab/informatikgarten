@@ -128,7 +128,7 @@ Vervollständigen Sie: Ein Halbaddierer besteht aus (Anzahl) **???** Logikgates,
 > 
 > Ein Halbaddierer besteht aus **zwei** Gates, nämlich ein **AND** und ein **XOR**.
 
-Na toll... Meine Katze hat wieder mit meinem Addierer gespielt und alle Verbindungen rausgerissen! Helfen Sie mir bitte und zeichnen Sie die richtigen Verbindungen ein!
+Na toll... Meine Katze hat wieder mit meinem Addierer gespielt und alle Verbindungen rausgerissen 😭 Helfen Sie mir bitte und zeichnen Sie die richtigen Verbindungen ein!
 
 ![[aufbau-04-prüfungsvorbereitung 2024-05-15 15.54.09.excalidraw]]
 > [!solution]- Lösung
