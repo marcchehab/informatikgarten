@@ -62,7 +62,7 @@ Ich habe immer zwei Stellen beim Ergebnis hingeschrieben, damit wir uns folgende
 Dieser Teil wird [in diesem Video](https://kswe-my.sharepoint.com/:v:/g/personal/cha_kswe_ch/EXzMMEBOos5KlShPEygNtnIBKK5X_iYTH_lDxmyQ8VwMJQ?e=810XJS&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) erklärt.
 #### Halbaddierer
 ![[Pasted image 20240506070736.png]]
-
+![[aufbau-01-addierer 2024-05-15 13.05.51.excalidraw]]
 #### Addierer
 
 ![[Pasted image 20240506070804.png]]

@@ -41,10 +41,10 @@ Sortieren Sie Anwendungsprogramme, Anwender, Hardware und Betriebssystem nach Ab
 
 > [!solution]- Lösung
 > 
-> - Anwender <-- am abstraktesten
+> - Anwender (am abstraktesten)
 > - Anwendungsprogramme
 > - Betriebssystem
-> - Hardware <-- am wenigsten abstrakt
+> - Hardware (am wenigsten abstrakt)
 
 Füllen Sie ein: In der Informatik teilen wir Dinge gern in Module auf, um Ordnung im Kopf zu schaffen. Wenn wir ein Modul verwenden, können wir uns nämlich ausschliesslich auf die **???** des Moduls konzentrieren und die Details der **???** komplett  ignorieren.
 
