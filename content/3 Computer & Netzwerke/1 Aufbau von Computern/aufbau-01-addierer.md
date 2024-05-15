@@ -60,7 +60,7 @@ Ich habe immer zwei Stellen beim Ergebnis hingeschrieben, damit wir uns folgende
 ### Umsetzung
 
 Dieser Teil wird [in diesem Video](https://kswe-my.sharepoint.com/:v:/g/personal/cha_kswe_ch/EXzMMEBOos5KlShPEygNtnIBKK5X_iYTH_lDxmyQ8VwMJQ?e=810XJS&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) erklärt.
-#### Halbaddierer (und wieso das nicht reicht)
+### Halbaddierer (und wieso das nicht reicht)
 
 Wir haben zuerst einen sogenannten Halbaddierer gebaut, der zwei Bits "A" und "B" zusammenzählt, wie oben bei der Rechnung. "Low" ist die tiefere Stelle, "high" die höhere Stelle.
 ![[aufbau-01-addierer 2024-05-15 13.05.51.excalidraw]]
@@ -84,7 +84,7 @@ Sie würden das als Mensch mit einem "Behalte" oder "Überschlag" auf die nächs
 ![[aufbau-01-addierer 2024-05-15 13.45.26.excalidraw]]
 
 Sie sehen: Um zwei Binärzahlen mit mehreren Stellen addieren zu können, müssen wir pro Stelle **nicht zwei sondern drei Bits addieren können**: wegen dem "Behalte". Und das macht der Addierer (oder Volladdierer).
-#### Addierer
+### Addierer
 
 Um die Schaltung für den (Voll-)Addierer zu verstehen, schlage ich vor, dass Sie auf dem Halbaddierer aufbauen und sich die beiden Outputs getrennt überlegen. Denken wir zuerst über den Punkt nach, den ich mit einem "X" markiert habe, und **überlegen uns nur die 1er (low)** des Ergebnisses.
 
