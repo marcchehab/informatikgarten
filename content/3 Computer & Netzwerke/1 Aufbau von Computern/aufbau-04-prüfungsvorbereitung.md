@@ -26,3 +26,105 @@ Hier die zusammengetragenen Lernziele der Lektionen:
  
 ## Übungsaufgaben
 
+### Testaufgaben zu [Intro](aufbau-00-intro)
+
+Sie schreiben ein Programm mit einer grafischen Oberfläche für viele Computer. Beantworten Sie mit wahr oder falsch, welche Information über die Computer Sie dazu brauchen.
+- Was für ein Prozessor
+- Vorhandener Speicherplatz
+- Betriebssystem
+
+> [!solution]- Lösung
+> 
+> Sie müssen nur das Betriebssystem kennen, weil das Betriebssystem die Details der Hardware "web-abstrahiert".
+
+Sortieren Sie Anwendungsprogramme, Anwender, Hardware und Betriebssystem nach Abstraktheit.
+
+> [!solution]- Lösung
+> 
+> - Anwender <-- am abstraktesten
+> - Anwendungsprogramme
+> - Betriebssystem
+> - Hardware <-- am wenigsten abstrakt
+
+Füllen Sie ein: In der Informatik teilen wir Dinge gern in Module auf, um Ordnung im Kopf zu schaffen. Wenn wir ein Modul verwenden, können wir uns nämlich ausschliesslich auf die **???** des Moduls konzentrieren und die Details der **???** komplett  ignorieren.
+
+> [!solution]- Lösung
+> 
+> Wenn wir ein Modul verwenden, können wir uns nämlich ausschliesslich auf die **Abstraktion/Schnittstelle** des Moduls konzentrieren und die Details der **Implementierung/Funktionsweise** komplett  ignorieren.
+
+## Testaufgaben zu [Logikgates & Addierern](aufbau-01-addierer)
+
+Ein OR-Gate habe zwei Inputs "A" und "B" sowie einen Output "out". Schreiben Sie die Wahrheitstabelle auf.
+
+> [!solution]- Lösung
+> 
+> | A | B | out |
+> | ----- | ----- | ------ |
+> | 0     | 0     | 0      |
+> | 0     | 1     | 1      |
+> | 1     | 0     | 1      |
+> | 1     | 1     | 1      |
+> 
+
+Schreiben Sie Wahrheitstabellen für diese Schaltungen
+
+![[aufbau-04-prüfungsvorbereitung 2024-05-15 11.39.19.excalidraw]]
+
+> [!solution]- Lösung
+> 
+> Die Wahrheitstabelle:
+> 
+> | A | B | out |
+> | ----- | ----- | ------ |
+> | 0     | 0     | 0      |
+> | 0     | 1     | 0      |
+> | 1     | 0     | 1      |
+> | 1     | 1     | 0      |
+> 
+> Die Herleitung mit Farben:
+> 
+> ![[aufbau-04-prüfungsvorbereitung 2024-05-15 11.44.16.excalidraw]]
+
+![[aufbau-04-prüfungsvorbereitung 2024-05-15 11.55.58.excalidraw]]
+
+> [!solution]- Lösung
+> 
+> Die Wahrheitstabelle:
+> 
+> | A | B | out |
+> | ----- | ----- | ------ |
+> | 0     | 0     | 0      |
+> | 0     | 1     | 1      |
+> | 1     | 0     | 0      |
+> | 1     | 1     | 0      |
+> 
+> Die Herleitung mit Farben:
+> 
+> ![[aufbau-04-prüfungsvorbereitung 2024-05-15 12.00.22.excalidraw]]
+
+![[aufbau-04-prüfungsvorbereitung 2024-05-15 12.50.15.excalidraw]]
+> [!solution]- Lösung
+> 
+> Die Wahrheitstabelle:
+> 
+> | A   | B   | C   | out |
+> | --- | --- | --- | --- |
+> | 0   | 0   | 0   | 0   |
+> | 0   | 0   | 1   | 1   |
+> | 0   | 1   | 0   | 1   |
+> | 0   | 1   | 1   | 1   |
+> | 1   | 0   | 0   | 1   |
+> | 1   | 0   | 1   | 1   |
+> | 1   | 1   | 0   | 0   |
+> | 1   | 1   | 1   | 1   |
+> 
+> Die Herleitung mit Farben:
+> 
+> ![[aufbau-04-prüfungsvorbereitung 2024-05-15 12.07.28.excalidraw]]
+
+Vervollständigen Sie: Ein Halbaddierer besteht aus **???** Gates, nämlich ein **???** und ein **???**.
+
+> [!solution]- Lösung
+> 
+> Ein Halbaddierer besteht aus **zwei** Gates, nämlich ein **AND** und ein **XOR**.
+
