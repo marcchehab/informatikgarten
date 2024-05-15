@@ -1,6 +1,7 @@
 ---
 title: "04: Prüfungsvorbereitung"
 ---
+## Lernziele
 Hier die zusammengetragenen Lernziele der Lektionen:
 
 > [!success] Lernziele für die Prüfung über Computersysteme
