@@ -139,3 +139,40 @@ Na toll... Meine Katze hat wieder mit meinem Addierer gespielt und alle Verbindu
 
 ## Testaufgaben zur [Von-Neumann-Architektur](aufbau-02-vonneumann)
 
+Benennen Sie folgende sechs Teile der Von-Neumann-Architektur.
+![[aufbau-04-prüfungsvorbereitung 2024-05-15 16.10.32.excalidraw]]
+
+> [!solution]- Lösung
+> 
+> 1. Control Unit (CU) oder Steuerwerk
+> 2. Arithmetic Logic Unit (ALU)
+> 3. Register
+> 4. Program Counter (PC) oder Speicherzähler (auch Instructionpointer (IP) / Speicherzeiger wären ok)
+> 5. Systembus
+> 6. Arbeitsspeicher (RAM)
+
+Im Speicherzähler des Prozessors befindet sich:
+- ein Befehl
+- eine Adresse
+- ein Zwischenergebnis
+
+> [!solution]- Lösung
+> 
+> Nur eine **Adresse** ist richtig
+
+Sie haben einen kleinen Prozessor gebaut, der folgende Befehle und sogar negative Zahlen beherrscht. Wenn Sie nun das Programm rechts ausführen: Welcher Wert steht am Schluss im Akkumulator?
+
+![[Pasted image 20240515163823.png]]
+> [!solution]- Lösung
+> 
+> **505**. 
+> 
+> Falls Sie **-191** gesagt hätten: Dieser Wert wird ausgegeben. Aber das Programm lädt bei Speicherzelle 05 den Wert der Speicherzelle 00 in den Akkumulator.
+
+Was müssten Sie bei folgendem Programm tun, damit die Zahlenreihe nicht bei 0 sondern bei 7 beginnt?
+
+![[Pasted image 20240515164421.png]]
+> [!solution]- Lösung
+> 
+> Den Inhalt der Speicherzellen 00 und 01 vertauschen.
+
