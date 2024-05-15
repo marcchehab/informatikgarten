@@ -20,7 +20,7 @@ Hier die zusammengetragenen Lernziele der Lektionen:
 >  - Sie wissen, was folgende Teile der Von-Neumann-Architektur sind: **CPU, CU, ALU, Register (PC und ACC), RAM, Bus**
 > - Sie können ein [einfaches Programm wie Bsp 1 im **LMC**](https://oinf.ch/interactive/little-man-computer/) verstehen oder schreiben.
 > 
-> ### [Hardwarekomponenten](aufbau-03-hwoverview)
+> ### [Hardwarekomponenten](aufbau-03-hwoverview) (falls besprochen)
 > - Sie können die sechs besprochenen Komponenten in einem Desktopcomputer identifizieren
 > - Sie können von den Komponenten die Kernfunktion und Kenngrösse sinngemäss zusammenfassen
  
@@ -158,7 +158,13 @@ Im Speicherzähler des Prozessors befindet sich:
 
 > [!solution]- Lösung
 > 
-> Nur eine **Adresse** ist richtig
+> Eine **Adresse** ist richtig
+
+Im Fetch-Schritt des FDE-Zyklus wird von wo nach wo was transferiert?
+
+> [!solution]- Lösung
+> 
+> Die aktuelle Adresse im Speicherzähler (PC) Register bestimmt, welche Speicherzelle im Arbeitsspeicher (RAM) gelesen wird. Der Inhalt dieser Speicherzelle wird in ein Register im Prozessor kopiert.
 
 Sie haben einen kleinen Prozessor gebaut, der folgende Befehle und sogar negative Zahlen beherrscht. Wenn Sie nun das Programm rechts ausführen: Welcher Wert steht am Schluss im Akkumulator?
 
