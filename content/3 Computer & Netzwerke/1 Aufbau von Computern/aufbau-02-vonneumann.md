@@ -4,9 +4,9 @@ title: "02: Von Neumann Architektur"
 
 > [!success] Lernziele
 > 
-> - Sie wissen, was folgende Teile der Von-Neumann-Architektur sind: CPU, CU, ALU, Register, RAM, Bus
-> - Sie wissen, was der Fetch-Decode-Execute-Zyklus bezweckt.
-> - Sie können ein einfaches Programm mit Schleife in einem LMC verstehen oder schreiben.
+> - Sie wissen, was die Schritte des **Fetch-Decode-Execute-Zyklus** tun.
+>  - Sie wissen, was folgende Teile der Von-Neumann-Architektur sind: **CPU, CU, ALU, Register (PC und ACC), RAM, Bus**
+> - Sie können ein [einfaches Programm wie Bsp 1 im **LMC**](https://oinf.ch/interactive/little-man-computer/) verstehen oder schreiben.
 
 1945 wurden in den USA und Europa an verschiedenen Universitäten Rechenmaschinen gebaut. Das Mathegenie John von Neumann fasste seine Arbeit am EDVAC-Computer in einem Bericht zusammen, in dem er die Kernprinzipien und die Organisation der Komponenten erklärte und beschrieb. Diese Grundprinzipien sind bis heute **die Basis der meisten Allzweckcomputer**.
 
@@ -44,6 +44,8 @@ https://oinf.ch/interactive/little-man-computer/
 ## Zusatzinfo: Programmiersprachen von Bits zu Python
 
 Der Little Man Computer (LMC) ist ein idealisiertes Modell eines Computers, das zum Lernen der grundlegenden Mechanismen der Computerprogrammierung genutzt wird. Hier ist eine kurze Erklärung, wie Binärcode zu Assembler und weiter zu höheren Programmiersprachen verarbeitet wird:
+
+![[aufbau-02-vonneumann 2024-05-13 08.27.30.excalidraw]]
 
 **Binärcode**: Der grundlegendste Code, den ein Computer verstehen kann, ist Binärcode – eine Folge von Nullen und Einsen. Diese repräsentieren direkt die Maschinenbefehle, die der Prozessor ausführt. Im Kontext des LMC umfasst dies einfache Befehle wie Laden, Speichern, Addieren, Subtrahieren, Springen, wenn Null, und so weiter.
 

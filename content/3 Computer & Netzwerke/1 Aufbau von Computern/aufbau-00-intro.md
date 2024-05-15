@@ -104,21 +104,24 @@ Wenn wir das radikal vereinfachen, können wir uns diese vier Module als Bauteil
 
 Das Betriebssystem (z.B. Windows , MacOS oder eine der vielen Linux-Varianten) ist selbst eine Software - man kann es auf einen USB-Stick speichern oder aus dem Internet herunterladen und auf verschiedenen Computern installieren - aber es hat sehr spezielle Aufgaben: in der Hauptsache ist das Betriebssystem **dafür zuständig, dass andere Programme die Hardware des Computers über standardisierte Schnittstellen auf geordnete Weise benutzen können**. 
 
-Ein Beispiel: **Ein normales Anwendungsprogramm speichert eine Datei nicht selbst auf der Festplatte, sondern es nutzt die Schnittstelle des Betriebssystems, um das zu tun.** So kann das Betriebssystem die gesamte Ordnung der Daten auf der Festplatte überwachen und verhindern, dass sich die Dutzenden verschiedenen Programme beim Laden oder Speichern in die Quere kommen.
 
-Das hat einen weiteren Vorteil: Normale Anwendungsprogramme müssen gar nicht wissen, was für eine Festplatte in diesem Computer eingebaut ist - oder was für ein Prozessor, Hauptspeicher oder Bildschirm. Sie schreiben ein Programm für ein spezifisches Betriebssystem und müssen sich nicht um alle möglichen Hardwarekombinationen kümmern.
-
-Diese komplizierte Arbeit wird also vom Betriebssystem übernommen und gegen oben bietet es einheitliche Schnittstellen an. Informatiker würden dazu sagen: Die Hardware wird "weg-abstrahiert". Um mit allen möglichen Hardwarekomponenten kommunizieren zu können, nutzen moderne Betriebssysteme sogenannte Treiber (Englisch: driver). Meistens installieren sie diese automatisch, wenn ein neues Gerät erkannt wird (das nennt man "plug & play"). 
-
-**Das ist also die Kernfunktion des Betriebssystems: Es vermittelt zwischen den Anwendungsprogrammen und der Hardware des Computers und schaut, dass der Zugriff auf die Hardware geordnet abläuft.**
+> [!example] Ein Beispiel: Word speichert eine Datei
+> 
+> Ein normales Anwendungsprogramm wie Word **speichert eine Datei nicht selbst** auf der Festplatte, sondern es nutzt die **Schnittstelle des Betriebssystems**, um das zu tun. So kann das Betriebssystem die Ordnung wahren: Stellen Sie sich nur einmal das Chaos vor, wenn alle Programme der Welt wann und wie auch immer auf Ihre Festplatte schreiben könnten - totales Chaos! Das wäre so desorganisiert wie Schlangen im Coop 🤷 Das Betriebssystem überwacht und verhindert, dass sich die Programme beim Laden oder Speichern in die Quere kommen.
+> 
+> Das hat einen weiteren Vorteil: Normale Anwendungsprogramme müssen gar nicht wissen, was für ein Speicher in Ihrem Computer eingebaut ist - oder was für ein Prozessor, Arbeitsspeicher, oder Bildschirm. Sie schreiben ein Programm für die Schnittstellen des Betriebssystems und müssen sich nicht um alle möglichen Hardwarekombinationen kümmern.
+> 
+> Diese komplizierte Arbeit wird also vom Betriebssystem übernommen und "gegen oben" (im Schichtmodell) bietet es einheitliche Schnittstellen an. Informatiker würden dazu sagen: **Die Hardware wird vom Betriebssystem "weg-abstrahiert"**. 
+> 
+> Um mit allen möglichen Hardwarekomponenten kommunizieren zu können, nutzen Betriebssysteme sogenannte **Treiber** (Englisch: driver). Meistens installieren sie diese automatisch, wenn ein neues Gerät erkannt wird (das nennt man "plug & play"). 
 
 Diese Kernfunktion sehen Sie in vielen Aufgaben, die das Betriebssystem übernimmt: 
 - Speicherverwaltung: Es organisiert und verwaltet Speichermedien wie RAM und Festplatte, und bietet geordneten Schreib- und Lesezugriff.
-- Hardware- und Ressourcensteuerung: Es verwaltet alle Hardwarekomponenten, Peripheriegeräte und Systemressourcen, und bietet Zugriff darauf.
 - Prozessverwaltung: Es regelt den Zugriff von Programmen auf den Prozessor (Central Processing Unit, CPU) und andere Ressourcen, sodass die Hardware optimal ausgelastet ist.
 - Netzwerkkommunikation: Es organisiert den Datenaustausch, implementiert die TCP/IP-Schichten und bietet Programmen eine Schnittstelle dazu.
 - Anwendungsverwaltung: Es installiert, startet, beendet und verwaltet Anwendungsprogramme.
 - Benutzerverwaltung: Es verwaltet Benutzer und deren Rechte.
 - Systemstart und -herunterfahren: Es startet und beendet den Betrieb des Computers.
+- Hardware- und Ressourcensteuerung: Es verwaltet alle Hardwarekomponenten, Peripheriegeräte und Systemressourcen, und bietet Zugriff darauf.
 - GUI-Bereitstellung (optional): Es stellt eine grafische Benutzeroberfläche bereit, über die der Benutzer mit dem Computer interagieren kann.
 
