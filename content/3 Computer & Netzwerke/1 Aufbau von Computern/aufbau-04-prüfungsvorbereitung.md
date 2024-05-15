@@ -122,7 +122,7 @@ Schreiben Sie Wahrheitstabellen für diese Schaltungen
 > 
 > ![[aufbau-04-prüfungsvorbereitung 2024-05-15 12.07.28.excalidraw]]
 
-Vervollständigen Sie: Ein Halbaddierer besteht aus **???** Gates, nämlich ein **???** und ein **???**.
+Vervollständigen Sie: Ein Halbaddierer besteht aus (Anzahl) **???** Gates, nämlich ein **???** und ein **???**.
 
 > [!solution]- Lösung
 > 
