@@ -122,9 +122,20 @@ Schreiben Sie Wahrheitstabellen für diese Schaltungen
 > 
 > ![[aufbau-04-prüfungsvorbereitung 2024-05-15 12.07.28.excalidraw]]
 
-Vervollständigen Sie: Ein Halbaddierer besteht aus (Anzahl) **???** Gates, nämlich ein **???** und ein **???**.
+Vervollständigen Sie: Ein Halbaddierer besteht aus (Anzahl) **???** Logikgates, nämlich einem **???** und einem **???**.
 
 > [!solution]- Lösung
 > 
 > Ein Halbaddierer besteht aus **zwei** Gates, nämlich ein **AND** und ein **XOR**.
+
+Na toll... Meine Katze hat mit meinem Addierer gespielt und alle Verbindungen rausgerissen! Helfen Sie mir bitte und zeichnen Sie die richtigen Verbindungen ein!
+
+![[aufbau-04-prüfungsvorbereitung 2024-05-15 15.54.09.excalidraw]]
+> [!solution]- Lösung
+> 
+> Zum Üben habe ich die Logikgates wieder schön arrangiert. 
+> 
+> ![[aufbau-04-prüfungsvorbereitung 2024-05-15 15.57.33.excalidraw]]
+
+## Testaufgaben zur [Von-Neumann-Architektur](aufbau-02-vonneumann)
 

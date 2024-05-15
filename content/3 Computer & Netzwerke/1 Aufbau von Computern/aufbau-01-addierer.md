@@ -93,7 +93,6 @@ Um die Schaltung für den (Voll-)Addierer zu verstehen, schlage ich vor, dass Si
 
 Isoliert für die 1er (low) können wir diese Zahl also einfach **als einzelne Zahl verwenden** und sie zu C hinzuaddieren. Wie? Mit einem zweiten Halbaddierer!
 
-
 ![[aufbau-01-addierer 2024-05-15 13.59.54.excalidraw]]
 
 Jetzt überlegen wir uns die 2er (high):
