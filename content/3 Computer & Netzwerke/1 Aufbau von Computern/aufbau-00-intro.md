@@ -4,7 +4,7 @@ title: "00: Denkhilfe & Übersicht"
 > [!success] Lernziele
 > 
 > - Sie können den Unterschied zwischen **Abstraktion** und **Implementierung** eines Moduls beschreiben.
-> - Sie können Benutzer, Anwendungsprogramme, Betriebssystem und Hardware nach "Abstraktheit" sortieren und wissen, was mit "Abstraktheit" in diesem Kontext gemeint ist.
+> - Sie können Benutzer, Anwendungsprogramme, Betriebssystem und Hardware nach "Abstraktheit" sortieren.
 > - Sie können erklären, wieso es ein Betriebssystem als Schnittstelle zwischen Hardware und Anwenderprogrammen braucht.
 ## Abstraktion und Implementation von Modulen unterscheiden
 
