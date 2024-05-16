@@ -119,7 +119,7 @@ Schreiben Sie Wahrheitstabellen für diese Schaltungen
 > | 1   | 1   | 0   | 0   |
 > | 1   | 1   | 1   | 1   |
 > 
-> [Eine Videoerklärung finden Sie hier]([aufbau-logikgates-übung-gym3.mp4](https://kswe-my.sharepoint.com/:v:/g/personal/cha_kswe_ch/EXlpzcE_7-FHqbR4DDcCilsBtQ0gYKS4wLz-vwGOx4iybw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=iPS0H2)) und hier eine Herleitung mit Farben:
+> [Eine Videoerklärung finden Sie hier](https://kswe-my.sharepoint.com/:v:/g/personal/cha_kswe_ch/EXlpzcE_7-FHqbR4DDcCilsBtQ0gYKS4wLz-vwGOx4iybw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=iPS0H2) und hier eine Herleitung mit Farben:
 > 
 > ![[aufbau-04-prüfungsvorbereitung 2024-05-15 12.07.28.excalidraw]]
 
