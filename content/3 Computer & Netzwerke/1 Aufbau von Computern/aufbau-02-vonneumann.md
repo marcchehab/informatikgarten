@@ -1,7 +1,6 @@
 ---
 title: "02: Von Neumann Architektur"
 ---
-
 > [!success] Lernziele
 > 
 > - Sie wissen, was die Schritte des **Fetch-Decode-Execute-Zyklus** tun.

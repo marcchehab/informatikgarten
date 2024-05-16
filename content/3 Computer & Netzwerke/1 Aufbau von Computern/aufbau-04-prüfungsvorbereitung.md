@@ -71,7 +71,7 @@ Schreiben Sie Wahrheitstabellen für diese Schaltungen
 
 ![[aufbau-04-prüfungsvorbereitung 2024-05-15 11.39.19.excalidraw]]
 
-> [!solution]- Lösung
+> [!solution]- Lösung mit Videoerklärung
 > 
 > Die Wahrheitstabelle:
 > 
@@ -82,13 +82,13 @@ Schreiben Sie Wahrheitstabellen für diese Schaltungen
 > | 1     | 0     | 1      |
 > | 1     | 1     | 0      |
 > 
-> Die Herleitung mit Farben:
+> [Eine Videoerklärung finden Sie hier](https://kswe-my.sharepoint.com/:v:/g/personal/cha_kswe_ch/EWZB9ZwqY1RArXxD96ZAeF0B3fmknz41AAH7QdbZQIhy-A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ybDhhU) und hier eine Herleitung mit Farben:
 > 
 > ![[aufbau-04-prüfungsvorbereitung 2024-05-15 11.44.16.excalidraw]]
 
 ![[aufbau-04-prüfungsvorbereitung 2024-05-15 11.55.58.excalidraw]]
 
-> [!solution]- Lösung
+> [!solution]- Lösung mit Videoerklärung
 > 
 > Die Wahrheitstabelle:
 > 
@@ -99,12 +99,12 @@ Schreiben Sie Wahrheitstabellen für diese Schaltungen
 > | 1     | 0     | 0      |
 > | 1     | 1     | 0      |
 > 
-> Die Herleitung mit Farben:
+> [Eine Videoerklärung finden Sie hier](https://kswe-my.sharepoint.com/:v:/g/personal/cha_kswe_ch/EfqvjtXz-99Bk6JXppP7LCoB6Toi02PPXPUwQ8JOJkteog?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=5b3jqL) und hier eine Herleitung mit Farben:
 > 
 > ![[aufbau-04-prüfungsvorbereitung 2024-05-15 12.00.22.excalidraw]]
 
 ![[aufbau-04-prüfungsvorbereitung 2024-05-15 12.50.15.excalidraw]]
-> [!solution]- Lösung
+> [!solution]- Lösung mit Videoerklärung
 > 
 > Die Wahrheitstabelle:
 > 
@@ -119,7 +119,7 @@ Schreiben Sie Wahrheitstabellen für diese Schaltungen
 > | 1   | 1   | 0   | 0   |
 > | 1   | 1   | 1   | 1   |
 > 
-> Die Herleitung mit Farben:
+> [Eine Videoerklärung finden Sie hier]([aufbau-logikgates-übung-gym3.mp4](https://kswe-my.sharepoint.com/:v:/g/personal/cha_kswe_ch/EXlpzcE_7-FHqbR4DDcCilsBtQ0gYKS4wLz-vwGOx4iybw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=iPS0H2)) und hier eine Herleitung mit Farben:
 > 
 > ![[aufbau-04-prüfungsvorbereitung 2024-05-15 12.07.28.excalidraw]]
 
