@@ -174,7 +174,7 @@ Sie haben einen kleinen Prozessor gebaut, der folgende Befehle und sogar negativ
 > 
 > **505**. 
 > 
-> Falls Sie **-191** gesagt hätten: Dieser Wert wird ausgegeben. Aber das Programm lädt bei Speicherzelle 05 den Wert der Speicherzelle 00 in den Akkumulator.
+> Falls Sie **-191** gesagt hätten: Dieser Wert wird ausgegeben. Aber das Programm lädt bei Speicherzelle 04 (Inhalt: 500) den Wert der Speicherzelle 00 in den Akkumulator, also 505.
 
 Was müssten Sie bei folgendem Programm tun, damit die Zahlenreihe nicht bei 0 sondern bei 7 beginnt?
 
