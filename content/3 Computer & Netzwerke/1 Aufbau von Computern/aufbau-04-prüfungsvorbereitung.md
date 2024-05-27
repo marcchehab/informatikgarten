@@ -25,9 +25,7 @@ Hier die zusammengetragenen Lernziele der Lektionen:
 > - Sie können die sechs besprochenen Komponenten in einem Desktopcomputer identifizieren
 > - Sie können von den Komponenten die Kernfunktion und Kenngrösse sinngemäss zusammenfassen
  
-## Übungsaufgaben
-
-### Testaufgaben zu [Intro](aufbau-00-intro)
+## Übungsaufgaben zu [Intro](aufbau-00-intro)
 
 Sie schreiben ein Programm, das Sie auf vielen Computern installieren möchten. Beantworten Sie mit wahr oder falsch: **Welche Information über die Computer brauchen Sie?**
 - Was für einen Prozessor sie benutzen
@@ -53,7 +51,7 @@ Füllen Sie ein: In der Informatik teilen wir Dinge gern in Module auf, um Ordnu
 > 
 > Wenn wir ein Modul verwenden, können wir uns nämlich ausschliesslich auf die **Abstraktion/Schnittstelle** des Moduls konzentrieren und die Details der **Implementierung/Funktionsweise** komplett  ignorieren.
 
-### Testaufgaben zu [Logikgates & Addierern](aufbau-01-addierer)
+## Übungsaufgaben zu [Logikgates & Addierern](aufbau-01-addierer)
 
 Ein OR-Gate habe zwei Inputs "A" und "B" sowie einen Output "out". Schreiben Sie die Wahrheitstabelle auf.
 
@@ -138,7 +136,7 @@ Na toll... Meine Katze hat wieder mit meinem Addierer gespielt und alle Verbindu
 > 
 > ![[aufbau-04-prüfungsvorbereitung 2024-05-15 15.57.33.excalidraw]]
 
-### Testaufgaben zur [Von-Neumann-Architektur](aufbau-02-vonneumann)
+## Übungsaufgaben zur [Von-Neumann-Architektur](aufbau-02-vonneumann)
 
 Benennen Sie folgende sechs Teile der Von-Neumann-Architektur.
 ![[aufbau-04-prüfungsvorbereitung 2024-05-15 16.10.32.excalidraw]]
@@ -183,3 +181,34 @@ Was müssten Sie bei folgendem Programm tun, damit die Zahlenreihe nicht bei 0 s
 > 
 > Den Inhalt der Speicherzellen 00 und 01 vertauschen.
 
+
+## Übungsaufgaben zu [Hardwarekomponenten](aufbau-03-hwoverview) (falls besprochen)
+
+Wie kann es sein, dass ein Prozessor trotz niedrigerer Taktfrequenz schneller ist, als einer mit einer höheren Taktfrequenz?
+
+> [!solution]- Lösung
+> 
+> Wenn ein Prozessor mehre Prozessor**kerne** hat, kann er Operationen parallel durchführen. Der gesamte Prozessor kann so trotz niedrigerer Taktfrequenz insgesamt schneller sein.
+> 
+> Details zum Verständnis: Solche Prozessorkerne funktionieren, als hätten Sie mehrere Prozessoren in einem Computer, die parallel rechnen können (wenn die Programme dafür gemacht sind).
+
+Wie heisst die Komponente, die alle anderen Komponenten mit Strom versorgt?
+
+> [!solution]- Lösung
+> 
+> Das Netzteil
+
+Die wichtigsten Komponenten (z.B. das RAM, die Grafikkarte) können über den Systembus direkt mit der CPU kommunizieren. Über welchen Verteiler auf dem Mainboard sind andere, weniger wichtige Komponenten angeschlossen?
+
+> [!solution]- Lösung
+> 
+> Das Chipset.
+
+Sie haben einen Arbeitsspeicher in der Hand. Wo würden Sie ihn auf diesem Mainboard einstecken?
+
+![[aufbau-04-prüfungsvorbereitung 2024-05-28 00.05.49.excalidraw]]
+
+
+> [!solution]- Lösung
+> 
+> ![[aufbau-04-prüfungsvorbereitung 2024-05-28 00.00.16.excalidraw]]

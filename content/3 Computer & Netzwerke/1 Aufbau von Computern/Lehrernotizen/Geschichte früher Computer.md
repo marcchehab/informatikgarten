@@ -5,3 +5,6 @@
 [DIY Silikon-Chip](https://www.youtube.com/watch?v=IS5ycm7VfXg)
 
 https://computerhistory.org/timelines/
+
+Taktfrequenz Prozessoren
+https://www.karlrupp.net/2018/02/42-years-of-microprocessor-trend-data/
