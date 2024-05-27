@@ -184,6 +184,20 @@ Was müssten Sie bei folgendem Programm tun, damit die Zahlenreihe nicht bei 0 s
 
 ## Übungsaufgaben zu [Hardwarekomponenten](aufbau-03-hwoverview) (falls besprochen)
 
+Sie haben einen Arbeitsspeicher in der Hand. Wo würden Sie ihn auf diesem Mainboard einstecken?
+
+![[aufbau-04-prüfungsvorbereitung 2024-05-28 00.05.49.excalidraw]]
+
+> [!solution]- Lösung
+> 
+> ![[aufbau-04-prüfungsvorbereitung 2024-05-28 00.00.16.excalidraw]]
+
+Die wichtigsten Komponenten (z.B. das RAM, die Grafikkarte) können über den Systembus direkt mit der CPU kommunizieren. Über welchen Verteiler auf dem Mainboard sind andere, weniger wichtige Komponenten angeschlossen?
+
+> [!solution]- Lösung
+> 
+> Das Chipset.
+
 Wie kann es sein, dass ein Prozessor trotz niedrigerer Taktfrequenz schneller ist, als einer mit einer höheren Taktfrequenz?
 
 > [!solution]- Lösung
@@ -198,17 +212,4 @@ Wie heisst die Komponente, die alle anderen Komponenten mit Strom versorgt?
 > 
 > Das Netzteil
 
-Die wichtigsten Komponenten (z.B. das RAM, die Grafikkarte) können über den Systembus direkt mit der CPU kommunizieren. Über welchen Verteiler auf dem Mainboard sind andere, weniger wichtige Komponenten angeschlossen?
 
-> [!solution]- Lösung
-> 
-> Das Chipset.
-
-Sie haben einen Arbeitsspeicher in der Hand. Wo würden Sie ihn auf diesem Mainboard einstecken?
-
-![[aufbau-04-prüfungsvorbereitung 2024-05-28 00.05.49.excalidraw]]
-
-
-> [!solution]- Lösung
-> 
-> ![[aufbau-04-prüfungsvorbereitung 2024-05-28 00.00.16.excalidraw]]
