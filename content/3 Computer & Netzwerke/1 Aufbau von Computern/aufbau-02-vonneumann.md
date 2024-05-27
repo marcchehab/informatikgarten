@@ -15,13 +15,13 @@ Ich habe Ihnen im violetten Teil eine moderne Input- und Output-Infrastruktur an
 
 Konzentrieren wir uns zuerst auf den Ablauf:
 - Die Control Unit (CU) steuert den Prozess: Anweisungen werden **nacheinander über einen Bus aus dem Speicher geholt (fetch), dekodiert (decode) und ausgeführt (execute)**.
-- Daten und Befehle werden **beide zusammen** und **binär** im selben Speicher (RAM) gespeichert
+- Es gibt einen Arbeitsspeicher (RAM), wo binäre Daten gespeichert werden. Diese **können Werte, Befehle und Adressen repräsentieren**, je nachdem wie sie verwendet werden.
 - Der Zyklus setzt sich automatisch fort bis zu einer **Stopp-Anweisung**
 
 Um das zu bewerkstelligen, definiert die Von-Neumann-Architektur **vier Hauptteilen**:
 1. **Control Unit, CU**: Koordiniert den Ablauf, wie oben beschrieben.
 2. **Arithmetisch-logische Einheit (ALU)**: Führt alle Rechen- und Logikoperationen aus. Hier befindet sich der Addierer, den wir [[aufbau-01-addierer|in der Lektion dazu]] bauen.
-3. **Arbeitsspeicher (RAM)**: Speichert Daten **und** Befehle. 
+3. **Arbeitsspeicher (RAM)**: Speichert Daten (Werte, Adressen **und** Befehle alles im gleichen Speicher).
 4. **Input/Output (I/O)**: Verbindet diesen Kern des Computers mit anderen Geräten wie Massenspeicher (SSD, Festplatten), Grafikkarten, USB-Geräte und Peripheriegeräte.
 
 ## LMC-Simulator

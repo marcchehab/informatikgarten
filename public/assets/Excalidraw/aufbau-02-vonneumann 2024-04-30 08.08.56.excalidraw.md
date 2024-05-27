@@ -59,19 +59,19 @@ Adresse
 
 Daten
 
-Befehl
-Befehl
-Befehl
-Adresse
-Befehl
-Adresse
-Wert
-Wert
-Adresse
-Wert
-Befehl
-Adresse
-Wert
+0100 1001
+1101 0011
+0100 1001
+1101 0011
+0110 1010
+0011 1101
+1010 0110
+0101 1000
+1100 1111
+0010 0101
+0111 0010
+1001 1011
+1011 0001
 ... ^yGnagPlP
 
 System Bus ^17ErHbrx
@@ -506,8 +506,8 @@ Inputs / Outputs ^LFKcB9WM
 		},
 		{
 			"type": "arrow",
-			"version": 254,
-			"versionNonce": 1359191135,
+			"version": 260,
+			"versionNonce": 43668573,
 			"isDeleted": false,
 			"id": "R5vh_S8Do-KAFbXhzrZY2",
 			"fillStyle": "solid",
@@ -529,7 +529,7 @@ Inputs / Outputs ^LFKcB9WM
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1715154709261,
+			"updated": 1716797930629,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -558,8 +558,8 @@ Inputs / Outputs ^LFKcB9WM
 		},
 		{
 			"type": "arrow",
-			"version": 236,
-			"versionNonce": 1742347537,
+			"version": 239,
+			"versionNonce": 1483325629,
 			"isDeleted": false,
 			"id": "CFLZd0S21RBT5YdAsGJfx",
 			"fillStyle": "solid",
@@ -581,7 +581,7 @@ Inputs / Outputs ^LFKcB9WM
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1715154709261,
+			"updated": 1716797930629,
 			"link": null,
 			"locked": false,
 			"startBinding": null,
@@ -606,8 +606,8 @@ Inputs / Outputs ^LFKcB9WM
 		},
 		{
 			"type": "arrow",
-			"version": 238,
-			"versionNonce": 808368255,
+			"version": 244,
+			"versionNonce": 431256957,
 			"isDeleted": false,
 			"id": "-4pm_D1C3F_TKoyidoYOR",
 			"fillStyle": "solid",
@@ -629,7 +629,7 @@ Inputs / Outputs ^LFKcB9WM
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1715154709261,
+			"updated": 1716797930629,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -658,8 +658,8 @@ Inputs / Outputs ^LFKcB9WM
 		},
 		{
 			"type": "arrow",
-			"version": 269,
-			"versionNonce": 966152945,
+			"version": 275,
+			"versionNonce": 2045311549,
 			"isDeleted": false,
 			"id": "LLg1f7A_BpckkU5CSAk8_",
 			"fillStyle": "solid",
@@ -681,17 +681,17 @@ Inputs / Outputs ^LFKcB9WM
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1715154709261,
+			"updated": 1716797930630,
 			"link": null,
 			"locked": false,
 			"startBinding": {
 				"elementId": "nYznNdGy",
-				"focus": 0.09551208017707472,
+				"focus": -0.014403923545480236,
 				"gap": 10.51069326278298
 			},
 			"endBinding": {
 				"elementId": "GACfzwnp",
-				"focus": -0.1387899251663935,
+				"focus": -0.1387899251663953,
 				"gap": 10.756388748840067
 			},
 			"lastCommittedPoint": null,
@@ -1158,8 +1158,8 @@ Inputs / Outputs ^LFKcB9WM
 		},
 		{
 			"type": "text",
-			"version": 270,
-			"versionNonce": 1712274449,
+			"version": 288,
+			"versionNonce": 335265107,
 			"isDeleted": false,
 			"id": "hsjPwLHV",
 			"fillStyle": "solid",
@@ -1168,7 +1168,7 @@ Inputs / Outputs ^LFKcB9WM
 			"roughness": 0,
 			"opacity": 100,
 			"angle": 0,
-			"x": 814.7187826849463,
+			"x": 796.7187826849463,
 			"y": -205.40996118863222,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#ffec99",
@@ -1179,7 +1179,7 @@ Inputs / Outputs ^LFKcB9WM
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1715154709261,
+			"updated": 1716799043262,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -1194,8 +1194,8 @@ Inputs / Outputs ^LFKcB9WM
 		},
 		{
 			"type": "text",
-			"version": 597,
-			"versionNonce": 286674303,
+			"version": 631,
+			"versionNonce": 2116871645,
 			"isDeleted": false,
 			"id": "yGnagPlP",
 			"fillStyle": "solid",
@@ -1204,29 +1204,29 @@ Inputs / Outputs ^LFKcB9WM
 			"roughness": 0,
 			"opacity": 100,
 			"angle": 0,
-			"x": 888.087922963759,
+			"x": 877.501985463759,
 			"y": -205.40996111201116,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#ffec99",
-			"width": 73.369140625,
-			"height": 368,
+			"width": 100.52489396184686,
+			"height": 365.9999694824219,
 			"seed": 99899606,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1715154929000,
+			"updated": 1716799036612,
 			"link": null,
 			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 2,
-			"text": "Daten\n\nBefehl\nBefehl\nBefehl\nAdresse\nBefehl\nAdresse\nWert\nWert\nAdresse\nWert\nBefehl\nAdresse\nWert\n...",
-			"rawText": "Daten\n\nBefehl\nBefehl\nBefehl\nAdresse\nBefehl\nAdresse\nWert\nWert\nAdresse\nWert\nBefehl\nAdresse\nWert\n...",
+			"fontSize": 19.06249841054283,
+			"fontFamily": 3,
+			"text": "Daten\n\n0100 1001\n1101 0011\n0100 1001\n1101 0011\n0110 1010\n0011 1101\n1010 0110\n0101 1000\n1100 1111\n0010 0101\n0111 0010\n1001 1011\n1011 0001\n...",
+			"rawText": "Daten\n\n0100 1001\n1101 0011\n0100 1001\n1101 0011\n0110 1010\n0011 1101\n1010 0110\n0101 1000\n1100 1111\n0010 0101\n0111 0010\n1001 1011\n1011 0001\n...",
 			"textAlign": "center",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "Daten\n\nBefehl\nBefehl\nBefehl\nAdresse\nBefehl\nAdresse\nWert\nWert\nAdresse\nWert\nBefehl\nAdresse\nWert\n...",
-			"lineHeight": 1.15
+			"originalText": "Daten\n\n0100 1001\n1101 0011\n0100 1001\n1101 0011\n0110 1010\n0011 1101\n1010 0110\n0101 1000\n1100 1111\n0010 0101\n0111 0010\n1001 1011\n1011 0001\n...",
+			"lineHeight": 1.2
 		},
 		{
 			"type": "rectangle",
@@ -2205,15 +2205,15 @@ Inputs / Outputs ^LFKcB9WM
 		"currentItemStrokeStyle": "dotted",
 		"currentItemRoughness": 0,
 		"currentItemOpacity": 100,
-		"currentItemFontFamily": 2,
+		"currentItemFontFamily": 3,
 		"currentItemFontSize": 16,
 		"currentItemTextAlign": "center",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 120.03635933034246,
-		"scrollY": 511.7079187313461,
+		"scrollX": 249.5422892509713,
+		"scrollY": 250.55917942106095,
 		"zoom": {
-			"value": 1.1030029939482422
+			"value": 1.2000000000000002
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,
