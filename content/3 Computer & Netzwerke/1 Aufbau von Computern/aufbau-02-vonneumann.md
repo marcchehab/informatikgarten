@@ -14,8 +14,8 @@ title: "02: Von Neumann Architektur"
 Ich habe Ihnen im violetten Teil eine moderne Input- und Output-Infrastruktur angehängt. In dieser Lektion ist aber nur der obere Teil wichtig: die klassische **Von-Neumann-Architektur**.
 
 Konzentrieren wir uns zuerst auf den Ablauf:
-- Die Control Unit (CU) steuert den Prozess: Anweisungen werden **nacheinander über einen Bus aus dem Speicher geholt (fetch), dekodiert (decode) und ausgeführt (execute)**.
-- Es gibt einen Arbeitsspeicher (RAM), wo binäre Daten gespeichert werden. Diese **können Werte, Befehle und Adressen repräsentieren**, je nachdem wie sie verwendet werden.
+- Die Control Unit (CU) steuert den Prozess: Anweisungen werden **nacheinander über den Systembus aus dem Speicher geholt (fetch), dekodiert (decode) und ausgeführt (execute)**.
+- Es gibt einen Arbeitsspeicher (RAM), wo binäre Daten gespeichert werden. Diese **können Befehle, Werte und Adressen repräsentieren**, je nachdem wie sie verwendet werden.
 - Der Zyklus setzt sich automatisch fort bis zu einer **Stopp-Anweisung**
 
 Um das zu bewerkstelligen, definiert die Von-Neumann-Architektur **vier Hauptteilen**:
