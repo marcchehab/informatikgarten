@@ -1,5 +1,5 @@
 ---
-title: "04: Prüfungsvorbereitung"
+title: "04: Prüfungsvorbereitung ohne Symbole"
 ---
 ## Lernziele
 Hier die zusammengetragenen Lernziele der Lektionen:
@@ -12,7 +12,7 @@ Hier die zusammengetragenen Lernziele der Lektionen:
 > - Sie können erklären, wieso es ein Betriebssystem als **Schnittstelle zwischen Hardware und Anwenderprogrammen** braucht.
 > 
 >  #### [Logikgates & Addierer](aufbau-01-addierer) 
->  - Sie wissen, was die **Logikgates** NAND, AND, OR, XOR tun und kennen ihre **Wahrheitstabellen** und **Symbole**.
+>  - Sie wissen, was die **Logikgates** NAND, AND, OR, XOR tun und kennen ihre **Wahrheitstabellen**. Die **Symbole** müssen Sie *nicht* wissen.
 > - Sie können aus einfachen logischen **Schaltungen** eine **Wahrheitstabelle ableiten**.
 > - Sie können eine logische Schaltung für einen Halbaddierer und einen Addierer mit den korrekten Symbolen zeichnen und nachvollziehen.
 > 
@@ -67,7 +67,7 @@ Ein OR-Gate habe zwei Inputs "A" und "B" sowie einen Output "out". Schreiben Sie
 
 Schreiben Sie Wahrheitstabellen für diese Schaltungen
 
-![[aufbau-04-prüfungsvorbereitung 2024-05-15 11.39.19.excalidraw]]
+![[aufbau-04-prüfungsvorbereitung-ohne-symbole 2024-05-28 08.47.38.excalidraw]]
 
 > [!solution]- Lösung mit Videoerklärung
 > 
@@ -84,7 +84,8 @@ Schreiben Sie Wahrheitstabellen für diese Schaltungen
 > 
 > ![[aufbau-04-prüfungsvorbereitung 2024-05-15 11.44.16.excalidraw]]
 
-![[aufbau-04-prüfungsvorbereitung 2024-05-15 11.55.58.excalidraw]]
+
+![[aufbau-04-prüfungsvorbereitung-ohne-symbole 2024-05-28 08.51.13.excalidraw]]
 
 > [!solution]- Lösung mit Videoerklärung
 > 
@@ -101,7 +102,7 @@ Schreiben Sie Wahrheitstabellen für diese Schaltungen
 > 
 > ![[aufbau-04-prüfungsvorbereitung 2024-05-15 12.00.22.excalidraw]]
 
-![[aufbau-04-prüfungsvorbereitung 2024-05-15 12.50.15.excalidraw]]
+![[aufbau-04-prüfungsvorbereitung-ohne-symbole 2024-05-28 08.53.12.excalidraw]]
 > [!solution]- Lösung mit Videoerklärung
 > 
 > Die Wahrheitstabelle:
@@ -130,6 +131,8 @@ Vervollständigen Sie: Ein Halbaddierer besteht aus (Anzahl) **???** Logikgates,
 Na toll... Meine Katze hat wieder mit meinem Addierer gespielt und alle Verbindungen rausgerissen 😭 Helfen Sie mir bitte und zeichnen Sie die richtigen Verbindungen ein!
 
 ![[aufbau-04-prüfungsvorbereitung 2024-05-15 15.54.09.excalidraw]]
+
+
 > [!solution]- Lösung
 > 
 > Zum Üben habe ich die Logikgates wieder schön arrangiert. 
