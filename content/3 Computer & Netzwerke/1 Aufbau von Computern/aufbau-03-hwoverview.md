@@ -31,6 +31,8 @@ title: "03: Übersicht der Hardware"
 - Kernfunktion: Dauerhafter Speicher für Daten und Programme.
 - Kenngrösse: Speicherkapazität (GB/TB), Lese- und Schreibgeschwindigkeit
 - Wichtige Marken: Samsung, Kingston, WD
+- [Video einer offenen Festplatte](https://www.youtube.com/watch?v=yutumxftJeg&ab_channel=PanoramaCircle) zeigt, wieso es eine "Fest"-Platte" genannt wird.
+- [Video einer offenen SSD](https://www.youtube.com/watch?v=QWG3w4yyNCY) zeigt den riesen Unterschied dieser neuen, besseren Technologie.
 
 **5 Grafikkarte**
 - Kernfunktion: Verarbeitet und rendert die grafische Oberfläche oder 3D-Umgebungen
