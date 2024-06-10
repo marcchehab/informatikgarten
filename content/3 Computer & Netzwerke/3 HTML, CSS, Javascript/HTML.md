@@ -107,7 +107,7 @@ Für diese Aufgabe können Sie folgende HTML-Tags verwenden.
 | `<p>`                | Definiert einen Absatz.                                                                                                               |
 | `<br>`               | Fügt einen Zeilenumbruch ein (wird nicht geschlossen).                                                                                |
 | `<hr>`               | Fügt eine horizontale Trennlinie ein.                                                                                                 |
-| `<a src="url">`      | Definiert einen Hyperlink.                                                                                                            |
+| `<a href="url">`     | Definiert einen Hyperlink.                                                                                                            |
 | `<img src="url">`    | Definiert ein Bild.                                                                                                                   |
 | `<ul>`               | Definiert eine ungeordnete (Aufzählungs-)Liste.                                                                                       |
 | `<ol>`               | Definiert eine geordnete (nummerierte) Liste.                                                                                         |
