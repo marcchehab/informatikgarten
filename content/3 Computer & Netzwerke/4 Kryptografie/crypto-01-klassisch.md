@@ -120,6 +120,8 @@ Hierbei wird jeder Buchstabe des Klartextes unterschiedlich verschoben:
 - `L` (Shift 10) -> `V`
 - `O` (Shift 4) -> `S`
 
+![[crypto-01-klassisch 2024-06-10 12.39.53.excalidraw]]
+
 #### Vorteile und Nachteile
 
 - **Vorteile**:
