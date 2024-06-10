@@ -9,7 +9,7 @@ title: "01: Kryptografie Intro"
 > 
 > Sie haben 15 Minuten Zeit für folgende Aufgaben:
 > - Einigen Sie sich auf eine **Methode**
-> - Teilen Sie Ihre Gruppe in **zwei Teilgruppen**. Jede Teilgruppe **verschlüsselt** eine hochgeheime Nachricht mit 3 Sätzen für die andere Teilgruppe.
+> - Teilen Sie Ihre Gruppe in **zwei Teilgruppen**. Jede Teilgruppe **verschlüsselt** eine hochgeheime Nachricht über ein Treffen mit 3 Sätzen für die andere Teilgruppe.
 > - Die andere Teilgruppe **entschlüsselt** die Nachricht, um zu schauen, ob Ihre Methode funktioniert.
 > 
 > ...doch dann passiert der Super-GAU!
@@ -140,7 +140,7 @@ Die Scytale-Verschlüsselung ist eine der ältesten bekannten Verschlüsselungsm
 
 1. **Scytale-Stab**: Ein Stab oder Zylinder mit einem bestimmten Durchmesser wird verwendet. Die Nachricht wird auf einen Streifen Papier geschrieben, der um den Stab gewickelt wird.
 2. **Zeilenweise Lesen**: Nachdem die Nachricht auf den Stab gewickelt wurde, wird sie in Zeilen geschrieben. Der verschlüsselte Text wird dann zeilenweise abgelesen.
-
+![[Pasted image 20240610125006.png]]
 #### Beispiel
 
 - **Klartext**: "diesisteinegeheimenachricht"
