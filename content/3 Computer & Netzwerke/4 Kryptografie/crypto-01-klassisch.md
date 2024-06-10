@@ -16,7 +16,7 @@ title: "01: Kryptografie Intro"
 > 
 > (Musik fürs [Ambiente](https://open.spotify.com/track/4y8GgkINBu7hH7IX9CBw87?si=16e17ac2221e4b06))
 
-## Kryptografie mit Hilfe von KI und Python
+## Kryptografie mit Hilfe von Python
 
 Weite Teile des modernen Internets basieren auf demselben Prinzip: dass Nachrichten geheim übertragen werden können. Wir nähern uns hier diesem Thema an und schauen, wie wir mit Python eine eigene Verschlüsselungsfunktion schreiben können. Zuerst einigen wir uns doch auf die Begriffe:
 - **Klartext**: Die Information, die wir verschlüsseln.
@@ -171,6 +171,8 @@ Die Scytale-Verschlüsselung ist eine der ältesten bekannten Verschlüsselungsm
   - Begrenzte Anwendung: In modernen Anwendungen bietet die Scytale-Verschlüsselung keinen ausreichenden Schutz.
 
 Die Scytale-Verschlüsselung veranschaulicht grundlegende Konzepte der Transpositionsverschlüsselung und ist ein historisch bedeutendes Beispiel für frühe kryptografische Methoden.
+
+## Python-Funktionen für klassische Verschlüsselungsverfahren
 
 > [!solution]- Eine Caesar-Verschlüsselung
 > 
