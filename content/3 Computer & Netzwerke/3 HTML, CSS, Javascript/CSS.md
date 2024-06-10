@@ -1,5 +1,5 @@
 ---
-title: "02: CSS - HTML mit Stil verstehen"
+title: "02: CSS - HTML mit Stil"
 ---
 
 > [!success] Lernziele
