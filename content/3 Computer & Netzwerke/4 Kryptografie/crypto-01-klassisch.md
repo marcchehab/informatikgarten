@@ -23,8 +23,7 @@ Weite Teile des modernen Internets basieren auf demselben Prinzip: dass Nachrich
 - **Geheimtext**: Die verschlüsselte Zeichenkette
 - **Schlüssel**: Was man wissen muss, um den Geheimtext in den Klartext umzuwandeln.
 
-Sie müssen als Basis allerdings wissen, wie Computer Texte speichern.
-
+Ein grundlegendes Prinzip der modernen Kryptografie, das nach dem niederländischen Kryptologen Auguste **Kerckhoffs** benannt ist. Es wurde in den 1880er Jahren formuliert und lautet im Wesentlichen: *"Ein kryptografisches System sollte auch dann sicher sein, wenn alles darüber bekannt ist, außer dem geheimen Schlüssel."*
 ### ASCII und Unicode
 Es wird Sie kaum überraschen, dass Texte in Computern letztlich eine Serie von Binärzahlen sind. Die Semantik ist letztlich einfach eine Tabelle, **die jeder Zahl einen Buchstaben zuordnet**. 
 
@@ -54,7 +53,6 @@ Binär nutzt Unicode den Umstand, dass die ASCII-Tabelle nur 7 Bit benötigt, al
 - **4 Bytes** (für Zeichen von U+10000 bis U+10FFFF):
     - Format: `11110xxx 10xxxxxx 10xxxxxx 10xxxxxx`
     - Beispiel: `𐍈` (U+10348) -> `11110000 10010000 10001101 10001000`
-
 ### Wörter sind Listen von Unicode-Symbolen in Python
 
 Beim Erstellen einer Verschlüsselungsfunktion hilft Ihnen der Umstand, dass man in Python **Zeichenketten wie Listen behandeln** kann. Zudem können Sie mit der **Funktion ord()** den Unicode des Buchstabens auslesen und **chr() macht aus einem Unicode wieder den Buchstaben**.
@@ -67,7 +65,6 @@ for buchstabe in satz:
 
 print("Ein Beispiel für einen Unicode: ", chr(100))
 ```
-
 ### Caesar-Verschlüsselung
 
 Die Caesar-Verschlüsselung ist eine der einfachsten und bekanntesten Methoden der klassischen Kryptografie. Sie wurde nach Julius Caesar benannt, der diese Methode angeblich verwendet hat, um seine militärischen Nachrichten zu verschlüsseln.
