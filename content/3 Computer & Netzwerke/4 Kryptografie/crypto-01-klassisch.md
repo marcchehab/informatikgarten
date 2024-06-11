@@ -9,8 +9,8 @@ title: "01: Kryptografie Intro"
 > 
 > Sie haben 15 Minuten Zeit für folgende Aufgaben:
 > - Einigen Sie sich auf eine **Methode**
-> - Teilen Sie Ihre Gruppe in **zwei Teilgruppen**. Jede Teilgruppe **verschlüsselt** eine hochgeheime Nachricht über ein Treffen mit 3 Sätzen für die andere Teilgruppe.
-> - Die andere Teilgruppe **entschlüsselt** die Nachricht, um zu schauen, ob Ihre Methode funktioniert.
+> - **Verschlüsseln** Sie eine hochgeheime Nachricht über ein Treffen mit 3 Sätzen.
+> - Testen Sie vielleicht, dass Sie die Nachricht auch wieder fehlerfrei **entschlüsseln** könnten.
 > 
 > ...doch dann passiert der Super-GAU!
 > 
@@ -22,6 +22,49 @@ Weite Teile des modernen Internets basieren auf demselben Prinzip: dass Nachrich
 - **Schlüssel**: Was man wissen muss, um den Geheimtext in den Klartext umzuwandeln.
 
 Ein grundlegendes Prinzip der modernen Kryptografie, das nach dem niederländischen Kryptologen Auguste **Kerckhoffs** benannt ist. Es wurde in den 1880er Jahren formuliert und lautet im Wesentlichen: *"Ein kryptografisches System sollte auch dann sicher sein, wenn alles darüber bekannt ist, ausser dem geheimen Schlüssel."*
+
+### Scytale-Verschlüsselung
+
+Die Scytale-Verschlüsselung ist eine der ältesten bekannten Verschlüsselungsmethoden und wurde im antiken Griechenland verwendet. Sie ist eine Form der **Transpositionsverschlüsselung**, bei der die Positionen der Zeichen im Klartext verändert werden, ohne die Zeichen selbst zu verändern.
+
+#### Funktionsweise
+
+1. **Scytale-Stab**: Ein Stab oder Zylinder mit einem bestimmten Durchmesser wird verwendet. Die Nachricht wird auf einen Streifen Papier geschrieben, der um den Stab gewickelt wird.
+2. **Zeilenweise Lesen**: Nachdem die Nachricht auf den Stab gewickelt wurde, wird sie in Zeilen geschrieben. Der verschlüsselte Text wird dann zeilenweise abgelesen.
+![[Pasted image 20240610125006.png]]
+#### Beispiel
+
+- **Klartext**: "diesisteinegeheimenachricht"
+- **Anzahl der Zeilen**: 5 (wird als Anzahl der "Rails" oder Spalten interpretiert)
+
+**Schritt-für-Schritt-Verfahren**:
+1. Schreibe die Nachricht zeilenweise um den Stab:
+   ```
+   d i e s i
+   s t e i n
+   e g e h e
+   i m e n a
+   c h r i c
+   h t
+   ```
+
+2. Lies die Zeichen spaltenweise ab, um den verschlüsselten Text zu erhalten:
+   ```
+   Verschlüsselte Nachricht: "dseich itgmht eeeer sihni ineac"
+   ```
+
+#### Vorteile und Nachteile
+
+- **Vorteile**:
+  - Einfachheit: Die Scytale-Verschlüsselung ist leicht zu verstehen und umzusetzen.
+  - Historische Bedeutung: Sie ist eine der ältesten bekannten Verschlüsselungsmethoden und bietet Einblick in frühe Kryptografie.
+
+- **Nachteile**:
+  - Schwache Sicherheit: Die Scytale-Verschlüsselung ist anfällig für einfache Kryptoanalysen, da die Transpositionsmuster leicht erkannt und rückgängig gemacht werden können.
+  - Begrenzte Anwendung: In modernen Anwendungen bietet die Scytale-Verschlüsselung keinen ausreichenden Schutz.
+
+Die Scytale-Verschlüsselung veranschaulicht grundlegende Konzepte der Transpositionsverschlüsselung und ist ein historisch bedeutendes Beispiel für frühe kryptografische Methoden.
+
 ### Caesar-Verschlüsselung
 
 Die Caesar-Verschlüsselung ist eine der einfachsten und bekanntesten Methoden der klassischen Kryptografie. Sie wurde nach Julius Caesar benannt, der diese Methode angeblich verwendet hat, um seine militärischen Nachrichten zu verschlüsseln.
@@ -87,48 +130,6 @@ Hierbei wird jeder Buchstabe des Klartextes unterschiedlich verschoben:
 - **Nachteile**:
   - Schlüsselverwaltung: Die Sicherheit hängt stark von der Geheimhaltung und der Komplexität des Schlüsselworts ab.
   - Anfälligkeit für bestimmte Angriffe: Bei sehr langen Texten und kurzen Schlüsselwörtern kann die Vigenère-Verschlüsselung durch bestimmte Kryptoanalysetechniken wie die Kasiski-Untersuchung geknackt werden.
-
-### Scytale-Verschlüsselung
-
-Die Scytale-Verschlüsselung ist eine der ältesten bekannten Verschlüsselungsmethoden und wurde im antiken Griechenland verwendet. Sie ist eine Form der **Transpositionsverschlüsselung**, bei der die Positionen der Zeichen im Klartext verändert werden, ohne die Zeichen selbst zu verändern.
-
-#### Funktionsweise
-
-1. **Scytale-Stab**: Ein Stab oder Zylinder mit einem bestimmten Durchmesser wird verwendet. Die Nachricht wird auf einen Streifen Papier geschrieben, der um den Stab gewickelt wird.
-2. **Zeilenweise Lesen**: Nachdem die Nachricht auf den Stab gewickelt wurde, wird sie in Zeilen geschrieben. Der verschlüsselte Text wird dann zeilenweise abgelesen.
-![[Pasted image 20240610125006.png]]
-#### Beispiel
-
-- **Klartext**: "diesisteinegeheimenachricht"
-- **Anzahl der Zeilen**: 5 (wird als Anzahl der "Rails" oder Spalten interpretiert)
-
-**Schritt-für-Schritt-Verfahren**:
-1. Schreibe die Nachricht zeilenweise um den Stab:
-   ```
-   d i e s i
-   s t e i n
-   e g e h e
-   i m e n a
-   c h r i c
-   h t
-   ```
-
-2. Lies die Zeichen spaltenweise ab, um den verschlüsselten Text zu erhalten:
-   ```
-   Verschlüsselte Nachricht: "dseich itgmht eeeer sihni ineac"
-   ```
-
-#### Vorteile und Nachteile
-
-- **Vorteile**:
-  - Einfachheit: Die Scytale-Verschlüsselung ist leicht zu verstehen und umzusetzen.
-  - Historische Bedeutung: Sie ist eine der ältesten bekannten Verschlüsselungsmethoden und bietet Einblick in frühe Kryptografie.
-
-- **Nachteile**:
-  - Schwache Sicherheit: Die Scytale-Verschlüsselung ist anfällig für einfache Kryptoanalysen, da die Transpositionsmuster leicht erkannt und rückgängig gemacht werden können.
-  - Begrenzte Anwendung: In modernen Anwendungen bietet die Scytale-Verschlüsselung keinen ausreichenden Schutz.
-
-Die Scytale-Verschlüsselung veranschaulicht grundlegende Konzepte der Transpositionsverschlüsselung und ist ein historisch bedeutendes Beispiel für frühe kryptografische Methoden.
 
 ## Klassische Verschlüsselungsverfahren mit Python
 
