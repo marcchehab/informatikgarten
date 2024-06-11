@@ -1,7 +1,7 @@
 ---
 title: "01: Kryptografie Intro"
 ---
-## Wieso Kryptografie?
+## Klassische Kryptografie
 
 > [!example] Praktischer Einstieg
 > 
@@ -16,55 +16,6 @@ title: "01: Kryptografie Intro"
 > 
 > (Musik fürs [Ambiente](https://open.spotify.com/track/4y8GgkINBu7hH7IX9CBw87?si=16e17ac2221e4b06))
 
-## Kryptografie mit Hilfe von Python
-
-Weite Teile des modernen Internets basieren auf demselben Prinzip: dass Nachrichten geheim übertragen werden können. Wir nähern uns hier diesem Thema an und schauen, wie wir mit Python eine eigene Verschlüsselungsfunktion schreiben können. Zuerst einigen wir uns doch auf die Begriffe:
-- **Klartext**: Die Information, die wir verschlüsseln.
-- **Geheimtext**: Die verschlüsselte Zeichenkette
-- **Schlüssel**: Was man wissen muss, um den Geheimtext in den Klartext umzuwandeln.
-
-Ein grundlegendes Prinzip der modernen Kryptografie, das nach dem niederländischen Kryptologen Auguste **Kerckhoffs** benannt ist. Es wurde in den 1880er Jahren formuliert und lautet im Wesentlichen: *"Ein kryptografisches System sollte auch dann sicher sein, wenn alles darüber bekannt ist, ausser dem geheimen Schlüssel."*
-### ASCII und Unicode
-Es wird Sie kaum überraschen, dass Texte in Computern letztlich eine Serie von Binärzahlen sind. Die Semantik ist letztlich einfach eine Tabelle, **die jeder Zahl einen Buchstaben zuordnet**. 
-
-Heute verwenden wir dafür weiterhin die sogenannte ASCII-Tabelle, die in den 1960ern standardisiert wurde. Dieser Zeichensatz wurde für die Übertragung so klein wie möglich gehalten, nämlich 7 Bit oder 128 Zeichen.
-
-![[index 2024-06-10 11.09.08.excalidraw]]
-
-Beispiel:
-- `A` hat den ASCII-Code 65.
-- `a` hat den ASCII-Code 97.
-
-ASCII deckt hauptsächlich die englische Sprache ab und hat somit Einschränkungen für andere Sprachen und Symbole (z.B. `€ — © ™ ∆ Ω 你好 Привіт 😊 🎉`)
-
-Als Reaktion auf die Beschränkungen von ASCII wurde Unicode entwickelt, um alle Schriftzeichen aller Sprachen darzustellen. Unicode kann über 1 Million Zeichen kodieren, von denen bisher über 143'000 definiert sind. 
-
-Binär nutzt Unicode den Umstand, dass die ASCII-Tabelle nur 7 Bit benötigt, also dass ein "normales" ASCII-Byte mit 0 beginnen würde. Unicode sagt nun: Wir signalisieren mit **`1` am Anfang des ersten Byte**, wie viele Bytes wir nutzen, und mit `10` am Anfang der weiteren Bytes, dass sie teil des gleichen Symbols sind.
-
-- **1 Byte** (für Zeichen von U+0000 bis U+007F):
-    - Format: `0xxxxxxx`
-    - Beispiel: `A` (U+0041) -> `01000001`
-- **2 Bytes** (für Zeichen von U+0080 bis U+07FF):
-    - Format: `110xxxxx 10xxxxxx`
-    - Beispiel: `é` (U+00E9) -> `11000011 10101001`
-- **3 Bytes** (für Zeichen von U+0800 bis U+FFFF):
-    - Format: `1110xxxx 10xxxxxx 10xxxxxx`
-    - Beispiel: `你` (U+4F60) -> `11100100 10111101 10100000`
-- **4 Bytes** (für Zeichen von U+10000 bis U+10FFFF):
-    - Format: `11110xxx 10xxxxxx 10xxxxxx 10xxxxxx`
-    - Beispiel: `𐍈` (U+10348) -> `11110000 10010000 10001101 10001000`
-### Wörter sind Listen von Unicode-Symbolen in Python
-
-Beim Erstellen einer Verschlüsselungsfunktion hilft Ihnen der Umstand, dass man in Python **Zeichenketten wie Listen behandeln** kann. Zudem können Sie mit der **Funktion ord()** den Unicode des Buchstabens auslesen und **chr() macht aus einem Unicode wieder den Buchstaben**.
-
-```turtle
-satz = "Hallo 😍"
-
-for buchstabe in satz:
-	print(buchstabe, " hat den Code ", ord(buchstabe))
-
-print("Ein Beispiel für einen Unicode: ", chr(100))
-```
 ### Caesar-Verschlüsselung
 
 Die Caesar-Verschlüsselung ist eine der einfachsten und bekanntesten Methoden der klassischen Kryptografie. Sie wurde nach Julius Caesar benannt, der diese Methode angeblich verwendet hat, um seine militärischen Nachrichten zu verschlüsseln.
@@ -171,7 +122,67 @@ Die Scytale-Verschlüsselung ist eine der ältesten bekannten Verschlüsselungsm
 
 Die Scytale-Verschlüsselung veranschaulicht grundlegende Konzepte der Transpositionsverschlüsselung und ist ein historisch bedeutendes Beispiel für frühe kryptografische Methoden.
 
-## Python-Funktionen für klassische Verschlüsselungsverfahren
+## Klassische Verschlüsselungsverfahren mit Python
+
+Weite Teile des modernen Internets basieren auf demselben Prinzip: dass Nachrichten geheim übertragen werden können. Wir nähern uns hier diesem Thema an und schauen, wie wir mit Python eine eigene Verschlüsselungsfunktion schreiben können. Zuerst einigen wir uns doch auf die Begriffe:
+- **Klartext**: Die Information, die wir verschlüsseln.
+- **Geheimtext**: Die verschlüsselte Zeichenkette
+- **Schlüssel**: Was man wissen muss, um den Geheimtext in den Klartext umzuwandeln.
+
+Ein grundlegendes Prinzip der modernen Kryptografie, das nach dem niederländischen Kryptologen Auguste **Kerckhoffs** benannt ist. Es wurde in den 1880er Jahren formuliert und lautet im Wesentlichen: *"Ein kryptografisches System sollte auch dann sicher sein, wenn alles darüber bekannt ist, ausser dem geheimen Schlüssel."*
+### ASCII und Unicode
+Es wird Sie kaum überraschen, dass Texte in Computern letztlich eine Serie von Binärzahlen sind. Die Semantik ist letztlich einfach eine Tabelle, **die jeder Zahl einen Buchstaben zuordnet**. 
+
+Heute verwenden wir dafür weiterhin die sogenannte ASCII-Tabelle, die in den 1960ern standardisiert wurde. Dieser Zeichensatz wurde für die Übertragung so klein wie möglich gehalten, nämlich 7 Bit oder 128 Zeichen.
+
+![[index 2024-06-10 11.09.08.excalidraw]]
+
+Beispiel:
+- `A` hat den ASCII-Code 65.
+- `a` hat den ASCII-Code 97.
+
+ASCII deckt hauptsächlich die englische Sprache ab und hat somit Einschränkungen für andere Sprachen und Symbole (z.B. `€ — © ™ ∆ Ω 你好 Привіт 😊 🎉`)
+
+Als Reaktion auf die Beschränkungen von ASCII wurde Unicode entwickelt, um alle Schriftzeichen aller Sprachen darzustellen. Unicode kann über 1 Million Zeichen kodieren, von denen bisher über 143'000 definiert sind. 
+
+Binär nutzt Unicode den Umstand, dass die ASCII-Tabelle nur 7 Bit benötigt, also dass ein "normales" ASCII-Byte mit 0 beginnen würde. Unicode sagt nun: Wir signalisieren mit **`1` am Anfang des ersten Byte**, wie viele Bytes wir nutzen, und mit `10` am Anfang der weiteren Bytes, dass sie teil des gleichen Symbols sind.
+
+- **1 Byte** (für Zeichen von U+0000 bis U+007F):
+    - Format: `0xxxxxxx`
+    - Beispiel: `A` (U+0041) -> `01000001`
+- **2 Bytes** (für Zeichen von U+0080 bis U+07FF):
+    - Format: `110xxxxx 10xxxxxx`
+    - Beispiel: `é` (U+00E9) -> `11000011 10101001`
+- **3 Bytes** (für Zeichen von U+0800 bis U+FFFF):
+    - Format: `1110xxxx 10xxxxxx 10xxxxxx`
+    - Beispiel: `你` (U+4F60) -> `11100100 10111101 10100000`
+- **4 Bytes** (für Zeichen von U+10000 bis U+10FFFF):
+    - Format: `11110xxx 10xxxxxx 10xxxxxx 10xxxxxx`
+    - Beispiel: `𐍈` (U+10348) -> `11110000 10010000 10001101 10001000`
+### Wörter sind Listen von Unicode-Symbolen in Python
+
+Beim Erstellen einer Verschlüsselungsfunktion hilft Ihnen der Umstand, dass man in Python **Zeichenketten wie Listen behandeln** kann. 
+
+Zudem können Sie mit der **Funktion ord()** den Unicode des Buchstabens auslesen und **chr() macht aus einem Unicode wieder den Buchstaben**.
+
+```turtle
+satz = "Hallo 😍"
+
+for buchstabe in satz:
+	print(buchstabe, " hat den Code ", ord(buchstabe))
+
+print("Ein Beispiel für einen Unicode: ", chr(100))
+```
+
+
+> [!example] Caesar-Verschlüsselung umsetzen
+> 
+> Schreiben Sie eine Funktion `caesar_encrypt` mit zwei Parametern: die Nachricht, die verschlüsselt werden soll, und wie weit verschoben werden soll. Man soll die Funktion zum Beispiel so aufrufen können, um die Nachricht um vier Stellen zu verrücken: 
+> 
+> `decrypt("Wir treffen uns um 17 Uhr im Cipher Cafe", 4)`
+>
+> Eine mögliche Ausgabe wäre: `Zlu wuhiihq xqv xp 17 Xku lp Flskhu Fdih`
+
 
 > [!solution]- Eine Caesar-Verschlüsselung
 > 
