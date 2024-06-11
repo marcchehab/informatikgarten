@@ -16,6 +16,12 @@ title: "01: Kryptografie Intro"
 > 
 > (Musik fürs [Ambiente](https://open.spotify.com/track/4y8GgkINBu7hH7IX9CBw87?si=16e17ac2221e4b06))
 
+Weite Teile des modernen Internets basieren auf demselben Prinzip: dass Nachrichten geheim übertragen werden können. Wir nähern uns hier diesem Thema an und schauen, wie wir mit Python eine eigene Verschlüsselungsfunktion schreiben können. Zuerst einigen wir uns doch auf die Begriffe:
+- **Klartext / Plaintext**: Die Information, die wir verschlüsseln.
+- **Chiffretext / Ciphertext**: Die verschlüsselte Zeichenkette
+- **Schlüssel**: Was man wissen muss, um den Geheimtext in den Klartext umzuwandeln.
+
+Ein grundlegendes Prinzip der modernen Kryptografie, das nach dem niederländischen Kryptologen Auguste **Kerckhoffs** benannt ist. Es wurde in den 1880er Jahren formuliert und lautet im Wesentlichen: *"Ein kryptografisches System sollte auch dann sicher sein, wenn alles darüber bekannt ist, ausser dem geheimen Schlüssel."*
 ### Caesar-Verschlüsselung
 
 Die Caesar-Verschlüsselung ist eine der einfachsten und bekanntesten Methoden der klassischen Kryptografie. Sie wurde nach Julius Caesar benannt, der diese Methode angeblich verwendet hat, um seine militärischen Nachrichten zu verschlüsseln.
@@ -27,6 +33,8 @@ Die Caesar-Verschlüsselung ist eine sogenannte **monoalphabetische Substitution
    - Zum Beispiel: Bei einer Verschiebung um 3 (dem klassischen Schlüssel) wird `A` zu `D`, `B` zu `E`, und so weiter.
 2. **Modulares Rechnen**: Da das Alphabet zyklisch ist, wird am Ende des Alphabets wieder von vorne begonnen. 
    - Zum Beispiel: `X` wird zu `A`, `Y` wird zu `B`, und `Z` wird zu `C` bei einer Verschiebung um 3.
+
+![[crypto-01-klassisch 2024-06-11 10.03.46.excalidraw]]
 #### Beispiel
 
 - **Klartext**: "HELLO"
@@ -124,12 +132,6 @@ Die Scytale-Verschlüsselung veranschaulicht grundlegende Konzepte der Transposi
 
 ## Klassische Verschlüsselungsverfahren mit Python
 
-Weite Teile des modernen Internets basieren auf demselben Prinzip: dass Nachrichten geheim übertragen werden können. Wir nähern uns hier diesem Thema an und schauen, wie wir mit Python eine eigene Verschlüsselungsfunktion schreiben können. Zuerst einigen wir uns doch auf die Begriffe:
-- **Klartext**: Die Information, die wir verschlüsseln.
-- **Geheimtext**: Die verschlüsselte Zeichenkette
-- **Schlüssel**: Was man wissen muss, um den Geheimtext in den Klartext umzuwandeln.
-
-Ein grundlegendes Prinzip der modernen Kryptografie, das nach dem niederländischen Kryptologen Auguste **Kerckhoffs** benannt ist. Es wurde in den 1880er Jahren formuliert und lautet im Wesentlichen: *"Ein kryptografisches System sollte auch dann sicher sein, wenn alles darüber bekannt ist, ausser dem geheimen Schlüssel."*
 ### ASCII und Unicode
 Es wird Sie kaum überraschen, dass Texte in Computern letztlich eine Serie von Binärzahlen sind. Die Semantik ist letztlich einfach eine Tabelle, **die jeder Zahl einen Buchstaben zuordnet**. 
 
